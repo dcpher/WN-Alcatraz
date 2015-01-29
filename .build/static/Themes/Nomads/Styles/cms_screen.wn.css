@@ -4736,13 +4736,13 @@ body {
   display: block;
   width: 210px;
   height: 65px;
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/wn_logo_header.png");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/wn_logo_header.png");
   text-indent: -999em;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   /* line 11, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_base/_layout.sass */
   .header .logo {
-    background-image: url("http://www.worldnomads.com/Content/styles/i/wn/wn_logo_header_x2.png");
+    background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/wn_logo_header_x2.png");
     background-size: 100% 100%;
   }
 }
@@ -5079,12 +5079,12 @@ button.button-footprints:hover {
   width: 210px;
   height: 65px;
   margin-bottom: 0;
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/wn_logo_small.png");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/wn_logo_small.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   /* line 9, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_base/_sticky-header.sass */
   .sticky-header .logo {
-    background-image: url("http://www.worldnomads.com/Content/styles/i/wn/wn_logo_small_x2.png");
+    background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/wn_logo_small_x2.png");
     background-size: 100% 100%;
   }
 }
@@ -5320,7 +5320,7 @@ footer {
 footer .footer-background {
   padding-top: 80px;
   margin-bottom: 0;
-  background: transparent url("http://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_grey.jpg") no-repeat left top;
+  background: transparent url("http://www.worldnomads.com/Content/Styles/i/wn/backgrounds/hero_bg_color_grey.jpg") no-repeat left top;
   background-size: cover;
 }
 /* line 21, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_base/_footer.sass */
@@ -5347,12 +5347,12 @@ footer .footer .logo {
   float: left;
   width: 221px;
   height: 86px;
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/wn_logo_stacked.png");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/wn_logo_stacked.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   /* line 30, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_base/_footer.sass */
   footer .footer .logo {
-    background-image: url("http://www.worldnomads.com/Content/styles/i/wn/wn_logo_stacked_x2.png");
+    background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/wn_logo_stacked_x2.png");
     background-size: 100% 100%;
   }
 }
@@ -5499,12 +5499,12 @@ footer .footer.purchase-path .logo {
   float: left;
   width: 271px;
   height: 50px;
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/wn_logo_wide.png");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/wn_logo_wide.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   /* line 123, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_base/_footer.sass */
   footer .footer.purchase-path .logo {
-    background-image: url("http://www.worldnomads.com/Content/styles/i/wn/wn_logo_wide_x2.png");
+    background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/wn_logo_wide_x2.png");
     background-size: 100% 100%;
   }
 }
@@ -5593,7 +5593,7 @@ footer .footer.purchase-path .logo {
 /* line 13, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_widgets/_hero-content-panels.sass */
 .hero.get-quote .partner-logos {
   position: absolute;
-  background: transparent url("http://www.worldnomads.com/Content/styles/i/wn/partner_logos.png") no-repeat left top;
+  background: transparent url("http://www.worldnomads.com/Content/Styles/i/wn/partner_logos.png") no-repeat left top;
   width: 458px;
   height: 44px;
   margin-left: -229px;
@@ -5801,31 +5801,31 @@ footer .footer.purchase-path .logo {
 }
 /* line 151, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_widgets/_hero-content-panels.sass */
 .hero-content-panel.color.yellow {
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_yellow.jpg");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/backgrounds/hero_bg_color_yellow.jpg");
 }
 /* line 153, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_widgets/_hero-content-panels.sass */
 .hero-content-panel.color.red {
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_red.jpg");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/backgrounds/hero_bg_color_red.jpg");
 }
 /* line 155, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_widgets/_hero-content-panels.sass */
 .hero-content-panel.color.blue {
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_blue.jpg");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/backgrounds/hero_bg_color_blue.jpg");
 }
 /* line 157, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_widgets/_hero-content-panels.sass */
 .hero-content-panel.color.grey {
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_grey.jpg");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/backgrounds/hero_bg_color_grey.jpg");
 }
 /* line 159, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_widgets/_hero-content-panels.sass */
 .hero-content-panel.color.teal {
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_teal.jpg");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/backgrounds/hero_bg_color_teal.jpg");
 }
 /* line 161, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_widgets/_hero-content-panels.sass */
 .hero-content-panel.color.purple {
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_purple.jpg");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/backgrounds/hero_bg_color_purple.jpg");
 }
 /* line 163, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_widgets/_hero-content-panels.sass */
 .hero-content-panel.color.orange {
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_orange.jpg");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/backgrounds/hero_bg_color_orange.jpg");
 }
 @media all and (max-width: 860px) {
   /* line 166, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_widgets/_hero-content-panels.sass */
@@ -6639,11 +6639,11 @@ input:focus + .tooltip {
 }
 /* line 125, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_cms/_cms.sass */
 .side-hero.blue {
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_blue.jpg");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/backgrounds/hero_bg_color_blue.jpg");
 }
 /* line 127, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_cms/_cms.sass */
 .side-hero.red {
-  background-image: url("http://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_red.jpg");
+  background-image: url("http://www.worldnomads.com/Content/Styles/i/wn/backgrounds/hero_bg_color_red.jpg");
 }
 @media all and (max-width: 860px) {
   /* line 110, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_cms/_cms.sass */
@@ -6923,7 +6923,7 @@ body.make-a-difference .hero-content-panel.power-of-travel h2:after {
   left: 0;
   width: 55px;
   height: 48px;
-  background: url("http://www.worldnomads.com/Content/styles/i/wn/quotemarks.png");
+  background: url("http://www.worldnomads.com/Content/Styles/i/wn/quotemarks.png");
 }
 @media all and (max-width: 660px) {
   /* line 60, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_cms/_footprints.sass */
@@ -7329,7 +7329,7 @@ body.travel-insurance .hero-content-panel.claim-paid h2 {
 /* line 147, D:/RC/Wng.FrontEnd/NomadsResponsive/src/sass/_cms/_travel-insurance.sass */
 body.travel-insurance .hero-content-panel.claim-paid h2:after {
   content: "";
-  background: url("http://www.worldnomads.com/Content/styles/i/wn/quotemarks.png");
+  background: url("http://www.worldnomads.com/Content/Styles/i/wn/quotemarks.png");
   position: absolute;
   left: 0;
   top: -70px;
