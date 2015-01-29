@@ -1,16 +1,278 @@
-{% extends "base.html" %}
+{% extends "wn-base.html" %}
 {% block content %}
 
-<a id="docs" href="http://cactusformac.com/redirect/#documentation">Documentation</a>
+<!-- Hero Content Panel Start -->
 
-  
-<section id="wrapper">
-	<p>The <strong>default template is great and</strong> is a barebones starting point for your project. It has all the files you need to set up a website, yet barely any pre-defined styles. If you’d like to start from scratch, this one’s for you.</p> 
-	<p>Jon has now made this</p>
-</section>
+<div class="hero-content-panel scholarship">
+  <div class="hero-content">
+    <div class="headercontent">
+      <ul class="breadcrumb">
+      <li>
+        <a href="/">World Nomads</a>
+      </li>
+      <li>
+        <a href="/learn">Learn</a>
+      </li>
+      <li><a href="/learn/travel-food">Passport &amp; Plate</a></li>
+    </ul>
+    <h2>Win a 7 day foodie adventure in Sri Lanka</h2>
+    <p>Cook, Snap &amp; Share your most memorable travel food moment to win.</p>
+    <form action="#" method="get">
+      <button class="button-primary">Apply now</button>
+    </form>
+    <p class="small">Applications close 6th March 2015</p>
+    </div>
+    
+    <div class="sponsor">
+      <p class="small">Sponsored by:</p>
+      <a href="http://www.intrepidtravel.com/au" target="_blank"><img src="{% static '/Media/Default/LearnImages/intrepid-logo.png' %}" title="Intrepid" width="110" height="110" /></a>
+    </div>
+  </div>
+</div>
 
-<a href="http://cactusformac.com/?utm_source=templates&utm_medium=badge&utm_campaign=default-template">
-	<img id="badge" class="2x" src="{% static '/images/badge.png' %}"/>
-</a>
+<!-- Hero Content Panel End -->       
+
+<!-- Background Header Image Start  -->
+
+<style>
+  @media all and (min-width: 860px) {
+    .hero-content-panel.scholarship {
+      background-image: url('/static/Media/Default/hero/hero_srilanka_full.jpg');
+      background-position: top center;
+      min-height: 550px;
+    }
+  }
+  @media all and (max-width: 860px) {
+    .hero-content-panel.scholarship {
+      background-image: url('/static/Media/Default/hero/hero_srilanka_tablet.jpg');
+      min-height: 440px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .hero-content-panel.scholarship {
+      background-image: url('/static/Media/Default/hero/hero_srilanka_mobile.jpg');
+    }
+    .hero-content-panel h2, .hero-content-panel h1 {
+      margin-top: 160px;
+    }
+  }
+</style>
+
+<!-- Background Header Image End -->
+
+<!-- Content Area Start -->
+<div class="normal-content">
+  <div class="col-2-1">
+    <div>
+      <div id="faq-title">
+        <h3>Passport &amp; Plate FAQs</h3>
+
+        <div>
+          Quick Links to commonly asked questions about:
+
+          <ul class="qlinks">
+            <li>
+              <a href="#faq-eligibility">Eligibility</a>
+            </li>
+
+            <li>
+              <a href="#faq-application">Applications</a>
+            </li>
+
+            <li>
+              <a href="#faq-trip">The Trip</a>
+            </li>
+
+            <li>
+              <a href="#faq-troubleshooting">Troubleshooting</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq" id="faq-eligibility">
+        <h4>Eligibility</h4>
+
+        <dl>
+          <dt>I have food restrictions / I am vegetarian. Can I still apply?</dt>
+
+          <dd>The winners of this program will be expected to try everything. If you are up for
+          that, feel free to apply.</dd>
+
+          <dt>I have food allergies. Can I apply?</dt>
+
+          <dd>Yes, feel free to apply, however, should you win it will be your responsibility to
+          manage your own allergies as we cannot ensure that meals / food are managed to your
+          needs.</dd>
+
+          <dt>I am Sri Lankan. Can I participate?</dt>
+
+          <dd>Yes, of course Sri Lankans are eligible too!</dd>
+
+          <dt>Are chef/restaurateur's allowed to apply?</dt>
+
+          <dd>Yes, feel free to apply!</dd>
+
+          <dt>By "18+ years of age", would this be "18 before the deadline" or "18 before the
+          actual trip"?</dt>
+
+          <dd>You do need to be 18 at the time of the application deadline (before March 6,
+          2015).</dd>
+
+          <dt>I speak only a little English, is this a problem?</dt>
+
+          <dd>English does not have to be your first language, but you do need to have
+          conversational English for this scholarship. In order for you to get the most of the
+          assignment you will need to be able to understand and converse with your guide, the
+          locals and the filmmaker on the trip.</dd>
+        </dl>
+      </div>
+
+      <div class="faq" id="faq-application">
+        <h4>Application</h4>
+
+        <dl>
+          <dt>Can I enter more than once?</dt>
+
+          <dd>No, you can only submit one recipe per person – make it a good one!</dd>
+
+          <dt>I have a great recipe, but its not my own. Can I still enter with that recipe?</dt>
+
+          <dd>Yes you can, we don't expect these recipes to be created by you, but rather recipes
+          that you have encountered on your travels - so naturally they will most likely be learned
+          or borrowed from someone else.</dd>
+
+          <dt>Do I need to provide a recipe for an entire meal, or just one dish?</dt>
+
+          <dd>Please keep your recipe to one dish - though the dish could have multiple parts, for
+          example the recipe for making pasta and then the recipe for the sauce that accompanies
+          it.</dd>
+
+          <dt>Can it be a recipe that has already published on my personal food and travel website
+          or does it have to be a previously unpublished one?</dt>
+
+          <dd>Yes, it can be a recipe that you have already published, if you think it is the best
+          one to submit.</dd>
+
+          <dt>Does the recipe entered need to be a Sri Lankan recipe?</dt>
+
+          <dd>It can be any recipe you like from anywhere in the world; it just needs to have a
+          great story behind it.</dd>
+
+          <dt>Which measuring unit should I use for the recipe?</dt>
+
+          <dd>Feel free to put measurements in whatever unit you like.</dd>
+
+          <dt>I am considering submitting a recipe with a seasonal/regional ingredient, are the
+          recipes going to be tested by the judges? Can I still submit my recipe?</dt>
+
+          <dd>The judging panel will test the top recipes. However, we won't discourage you from
+          submitting a recipe with seasonal or regional ingredients. Where possible, try to include
+          a substitute in your recipe if you think it would not be available elsewhere.</dd>
+
+          <dt>Would the quality of the photo affect the judging? Do the photos need to be for each
+          step?</dt>
+
+          <dd>
+            <p>Great photos are always nice, but they don't have a major bearing on the judging
+            process. You don't need to provide a photo of each step (though you can), a couple
+            shots of the process and finished product work just fine.</p>The photos you submit will
+            automatically be resized; the biggest image possible is 960 pixels wide at 72dpi.
+            Remember: we don’t want more than 5 photos.
+          </dd>
+        </dl>
+      </div>
+
+      <div class="faq" id="faq-trip">
+        <h4>The Trip</h4>
+
+        <dl>
+          <dt>How will you match the winners to the region?</dt>
+
+          <dd>The winners will be matched to the regions by the organizers prior to the trip.</dd>
+
+          <dt>Are the trip dates final or could they be altered a little?</dt>
+
+          <dd>Yes, these dates are final.</dd>
+
+          <dt>Will there be a guide or translator on the trip travelling with me?</dt>
+
+          <dd>There will be an English-speaking guide with you at all times. The guide will be able
+          to translate in each destination you visit.</dd>
+
+          <dt>What’s the deal with the filmmaker?</dt>
+
+          <dd>A filmmaker will be along to capture all of your food experiences. They will be
+          rolling on everything you eat and cook, and all of your local interactions. You MUST be
+          comfortable with this, they will be your shadow on the assignment.</dd>
+
+          <dt>Can I bring a travel companion or my partner along for the trip?</dt>
+
+          <dd>The three trips are only for one person each. Should you wish to extend that trip in
+          Sri Lanka after the assignment, this can be discussed.</dd>
+
+          <dt>Is there any other way to get into the program besides the scholarship? Can I pay for
+          my room &amp; board myself and take part in the program?</dt>
+
+          <dd>No, unfortunately, you cannot pay your way onto this trip..</dd>
+        </dl>
+      </div>
+
+      <div class="faq" id="faq-troubleshooting">
+        <h4>Troubleshooting</h4>
+
+        <dl>
+          <dt>I have a problem submitting my application. Can I email my entry to you? Help!</dt>
+
+          <dd>
+            <p>No, you cannot email your entry to us. All entrants need to fill the application
+            page and submit their applications via our website.</p>If you have encountered any
+            specific issues please contact us at scholarships@worldnomads.com
+          </dd>
+
+          <dt>I&#39;m not sure if my application was submitted correctly. How do I check this?</dt>
+
+          <dd>
+            If your entry is complete, you can <a href=
+            "http://adventures.worldnomads.com/scholarships">see your photos in the list</a> here
+            along with everyone else&#39;s entries.
+          </dd>
+        </dl>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="tabcolour">Scholarship closes in...</h4>
+
+      <div class="ml20">
+        <div id="countbox"></div>
+
+        <p class="small" style="clear:both;">Entries close March 6, 2015 at 2PM <a href=
+        "http://www.timeanddate.com/library/abbreviations/timezones/au/edt.html" target=
+        "_blank">(AEDT)</a></p>
+      </div>
+
+      <h4 class="tabcolour">Important dates</h4>
+
+      <div id="importantdates">
+        <p>March 6</p>
+        <h4>Applications close</h4>
+        <p>March 6 - April 1</p>
+        <h4>Application judging</h4>
+        <p>April 2</p>
+        <h4>Winner announced</h4>
+        <p>June 5-13</p>
+        <h4>Assignment in Sri Lanka</h4>
+      </div>
+
+      <div class="applynowarea">
+        <form action="#" method="get">
+          <button class="button-primary">Apply now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main Content Area End -->
 
 {% endblock content%}

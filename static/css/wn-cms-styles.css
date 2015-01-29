@@ -1,0 +1,128 @@
+@charset "UTF-8";
+ul.breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 80px 0 0 0; }
+  ul.breadcrumb li {
+    list-style: none;
+    padding: 0;
+    padding-left: 0; }
+  ul.breadcrumb li:after, ul.breadcrumb a {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    float: left;
+    margin-bottom: 8px; }
+  ul.breadcrumb li:after {
+    font-family: WNI;
+    content: "";
+    margin: 1px 4px; }
+  ul.breadcrumb li:last-child:after {
+    display: none; }
+
+ul.qlinks {
+  display: block; }
+  ul.qlinks li {
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 24px; }
+    ul.qlinks li a {
+      color: #228dd5;
+      font-size: 16px;
+      line-height: 130%; }
+  ul.qlinks li:after {
+    content: " | ";
+    margin-right: 4px;
+    margin-left: 4px;
+    color: #333; }
+  ul.qlinks li:last-child:after {
+    display: none; }
+
+.bottom p a span:after {
+  font-family: WNI;
+  content: "";
+  margin: 1px 8px; }
+
+.scholarship .headercontent {
+  float: left;
+  max-width: 440px; }
+
+.scholarship h2 {
+  font-size: 54px;
+  line-height: 54px;
+  color: #ffffff;
+  font-weight: 300;
+  padding-top: 5px;
+  clear: both; }
+
+.scholarship p {
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 300; }
+
+.scholarship p.small {
+  font-size: 14px;
+  margin-top: 16px; }
+
+.scholarship .sponsor {
+  float: right;
+  margin-top: 240px;
+  width: 140px; }
+
+.scholarship .sponsor p {
+  text-align: center; }
+
+.scholarship .sponsor a img {
+  width: 137px;
+  height: 137px;
+  display: inline-block;
+  border: none; }
+
+.normal-content {
+  width: 90%;
+  max-width: 1150px;
+  margin: 40px auto 0; }
+
+.normal-content h3 {
+  font-size: 44px;
+  line-height: 48px;
+  margin-bottom: 24px;
+  font-weight: 300; }
+
+.normal-content p.highlight {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 16px; }
+
+.normal-content ul.numbered {
+  list-style: decimal;
+  list-style-position: outside;
+  margin-left: 20px;
+  padding-left: 0; }
+
+.normal-content ul.numbered li {
+  padding-left: 20px;
+  margin-bottom: 16px;
+  font-weight: 500; }
+
+.normal-content ul.numbered li span {
+  font-weight: 300; }
+
+.normal-content dl dt {
+  font-weight: 500;
+  padding-bottom: 4px; }
+
+.normal-content dl dd {
+  font-weight: 300;
+  padding-bottom: 16px; }
+
+.normal-content dl dd p {
+  margin-bottom: 8px; }
+
+div.faq h4 {
+  font-size: 28px;
+  font-weight: 300; }
+
+/*# sourceMappingURL=wn-cms-styles.css.map */
