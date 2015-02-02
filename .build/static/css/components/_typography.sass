@@ -1,13 +1,6 @@
 // typography
-@import functions 
+@import functions
 
-
-// Variables
-
-// Colours
-$color-inverse: #ffffff
-$color-light-grey: #e5e5e5
-$color-dark-grey: #252525
 
 // Font Sizes
 
@@ -47,16 +40,16 @@ h1, h2, h3, h4, h5, h6, p
 h1 
   font-size: $h1-font-size
   letter-spacing: -1
-  margin: 4px 0 16px 0
+  margin: rem-calc(4) 0 1rem 0
 
 h2 
   font-size: $h2-font-size
   letter-spacing: -1
-  margin: 32px 0 8px 0
+  margin: rem-calc(8) 0 rem-calc(32) 0
 
 h3 
   font-size: $h3-font-size 
-  margin: 24px 0 8px 0
+  margin: rem-calc(24) 0 rem-calc(8) 0
 
 h4 
   font-size: $h4-font-size
@@ -69,8 +62,8 @@ h6
 p
   font-size: $p-font-size
   line-height: $p-line-height
-
-
+  margin-bottom: rem-calc(16)
+    
 
 // Header Panel Typography
 .hero-content
