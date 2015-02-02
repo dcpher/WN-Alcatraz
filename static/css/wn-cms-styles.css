@@ -1,158 +1,44 @@
-@charset "UTF-8";
-h1, h2, h3, h4, h5, h6, p {
-  line-height: 1.1;
-  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-  text-rendering: optimizeLegibility;
-  font-style: normal;
-  font-weight: 300; }
+/*
+Error: Invalid mixin "======".
+        on line 8 of /Users/jwhitby/Documents/GitHub - Web - Sources/WN-Alcatraz/static/css/wn-cms-styles.sass
 
-h1 {
-  font-size: 3.375rem;
-  letter-spacing: -1;
-  margin: 4px 0 16px 0; }
+3: @import components/typography
+4: @import components/breadcrumb
+5: @import components/quicklinks
+6: <<<<<<< HEAD
+7: @import components/qqc
+8: =======
+9: @import components/sidebar
+10: 
+11: // Structure Component?
+12: .col-2-1 > div:last-child 
+13:   border-left: 1px solid #959595
 
-h2 {
-  font-size: 2.75rem;
-  letter-spacing: -1;
-  margin: 32px 0 8px 0; }
-
-h3 {
-  font-size: 2rem;
-  margin: 24px 0 8px 0; }
-
-h4 {
-  font-size: 1.75rem; }
-
-h5 {
-  font-size: 1.375rem; }
-
-h6 {
-  font-size: 1rem; }
-
-p {
-  font-size: 1rem;
-  line-height: 1.375rem; }
-
-.hero-content h1 {
-  color: #ffffff;
-  padding-top: 5px;
-  clear: both; }
-.hero-content p {
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  color: #ffffff; }
-
-.normal-content p.highlight {
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  margin-bottom: 16px; }
-.normal-content p.small {
-  font-size: 14px;
-  margin-top: 16px; }
-
-ul.breadcrumb {
-  list-style: none;
-  padding: 0;
-  margin: 80px 0 0 0; }
-  ul.breadcrumb li {
-    list-style: none;
-    padding: 0;
-    padding-left: 0; }
-  ul.breadcrumb li:after, ul.breadcrumb a {
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 100%;
-    float: left;
-    margin-bottom: 8px; }
-  ul.breadcrumb li:after {
-    font-family: WNI;
-    content: "";
-    margin: 1px 4px; }
-  ul.breadcrumb li:last-child:after {
-    display: none; }
-
-ul.qlinks {
-  display: block; }
-  ul.qlinks li {
-    display: inline-block;
-    margin-top: 8px;
-    margin-bottom: 24px; }
-    ul.qlinks li a {
-      color: #228dd5;
-      font-size: 16px;
-      line-height: 130%; }
-  ul.qlinks li:after {
-    content: " | ";
-    margin-right: 4px;
-    margin-left: 4px;
-    color: #333; }
-  ul.qlinks li:last-child:after {
-    display: none; }
-
-.bottom p a span:after {
-  font-family: WNI;
-  content: "";
-  margin: 1px 8px; }
-
-.scholarship .headercontent {
-  float: left;
-  max-width: 30%; }
-
-.scholarship p.small {
-  font-size: 14px;
-  margin-top: 16px; }
-
-.scholarship .sponsor {
-  float: right;
-  margin-top: 240px;
-  width: 140px; }
-
-.scholarship .sponsor p {
-  text-align: center; }
-
-.scholarship .sponsor a img {
-  width: 137px;
-  height: 137px;
-  display: inline-block;
-  border: none; }
-
-.normal-content ul.numbered {
-  list-style: decimal;
-  list-style-position: outside;
-  margin-left: 20px;
-  padding-left: 0; }
-
-.normal-content ul.numbered li {
-  padding-left: 20px;
-  margin-bottom: 16px;
-  font-weight: 500; }
-
-.normal-content ul.numbered li span {
-  font-weight: 300; }
-
-.normal-content {
-  width: 90%;
-  max-width: 1150px;
-  margin: 40px auto 0; }
-
-.hero-content-panel .hero-content {
-  width: 90%;
-  max-width: 1150px; }
-
-.normal-content dl dt {
-  font-weight: 500;
-  padding-bottom: 4px; }
-
-.normal-content dl dd {
-  font-weight: 300;
-  padding-bottom: 16px; }
-
-.normal-content dl dd p {
-  margin-bottom: 8px; }
-
-div.faq h4 {
-  font-size: 28px;
-  font-weight: 300; }
-
-/*# sourceMappingURL=wn-cms-styles.css.map */
+Backtrace:
+/Users/jwhitby/Documents/GitHub - Web - Sources/WN-Alcatraz/static/css/wn-cms-styles.sass:8
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:1070:in `parse_mixin_definition'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:639:in `parse_line'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:525:in `build_tree'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:544:in `block in append_children'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `each'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `append_children'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:396:in `_to_tree'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:350:in `watch_or_update'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/bin/scss:13:in `<top (required)>'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/bin/scss:23:in `load'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid mixin \"======\".\A         on line 8 of /Users/jwhitby/Documents/GitHub - Web - Sources/WN-Alcatraz/static/css/wn-cms-styles.sass\A \A 3: @import components/typography\A 4: @import components/breadcrumb\A 5: @import components/quicklinks\A 6: <<<<<<< HEAD\A 7: @import components/qqc\A 8: =======\A 9: @import components/sidebar\A 10: \A 11: // Structure Component?\A 12: .col-2-1 > div:last-child \A 13:   border-left: 1px solid #959595"; }
