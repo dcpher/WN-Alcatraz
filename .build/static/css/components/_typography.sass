@@ -1,29 +1,96 @@
 // typography
-// Base Typography
-.scholarship
+@import functions 
+
+
+// Variables
+
+// Colours
+$color-inverse: #ffffff
+$color-light-grey: #e5e5e5
+$color-dark-grey: #252525
+
+// Font Sizes
+
+// We use these to control font styles
+$default-font-family: "Ubuntu", Helvetica, Arial, sans-serif
+$default-font-weight: 300
+$default-font-style: normal
+$default-font-color: $color-dark-grey
+$default-line-height: 1.1
+$default-top-margin: .2rem
+$default-bottom-margin: .5rem
+$default-text-rendering: optimizeLegibility
+
+// We use these to control header font sizes
+$h1-font-size: rem-calc(54)
+$h2-font-size: rem-calc(44)
+$h3-font-size: rem-calc(32)
+$h4-font-size: rem-calc(28)
+$h5-font-size: rem-calc(22)
+$h6-font-size: 1rem
+
+// We use these to control paragraph font sizes
+$p-font-size: 1rem
+$p-line-height: rem-calc(22)
+$p-margin-bottom: rem-calc(8)
+
+
+  
+// Main Header Styles
+h1, h2, h3, h4, h5, h6, p
+  line-height: $default-line-height
+  font-family: $default-font-family
+  text-rendering: $default-text-rendering
+  font-style: $default-font-style
+  font-weight: $default-font-weight
+
+h1 
+  font-size: $h1-font-size
+  letter-spacing: -1
+  margin: 4px 0 16px 0
+
+h2 
+  font-size: $h2-font-size
+  letter-spacing: -1
+  margin: 32px 0 8px 0
+
+h3 
+  font-size: $h3-font-size 
+  margin: 24px 0 8px 0
+
+h4 
+  font-size: $h4-font-size
+
+h5 
+  font-size: $h5-font-size 
+
+h6 
+  font-size: $h6-font-size
+p
+  font-size: $p-font-size
+  line-height: $p-line-height
+
+
+
+// Header Panel Typography
+.hero-content
   h1
-    font-size: 54px
-    line-height: 54px
-    color: #ffffff
-    font-weight: 300
+    color: $color-inverse
     padding-top: 5px
     clear: both
+
   p 
-    font-size: 24px
-    line-height: 28px
-    color: #ffffff
-    font-weight: 300
+    font-size: rem-calc(24)
+    line-height: rem-calc(28)
+    color: $color-inverse
+
+    
+// Body Content
 
 .normal-content
-  h2 
-    font-size: 44px
-    line-height: 48px
-    margin-bottom: 24px
-    font-weight: 300
-
   p.highlight 
-    font-size: 24px
-    line-height: 26px
+    font-size: rem-calc(24)
+    line-height: rem-calc(28)
     margin-bottom: 16px
 
   p.small 
