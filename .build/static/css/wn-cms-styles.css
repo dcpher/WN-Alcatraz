@@ -1,21 +1,21 @@
 /*
 Error: Invalid mixin "======".
-        on line 8 of /Users/jwhitby/Documents/GitHub - Web - Sources/WN-Alcatraz/static/css/wn-cms-styles.sass
+        on line 9 of /Users/jwhitby/Documents/GitHub - Web - Sources/WN-Alcatraz/static/css/wn-cms-styles.sass
 
-3: @import components/typography
 4: @import components/breadcrumb
 5: @import components/quicklinks
 6: <<<<<<< HEAD
-7: @import components/qqc
-8: =======
-9: @import components/sidebar
-10: 
-11: // Structure Component?
-12: .col-2-1 > div:last-child 
-13:   border-left: 1px solid #959595
+7: <<<<<<< HEAD
+8: @import components/qqc
+9: =======
+10: =======
+11: >>>>>>> FETCH_HEAD
+12: @import components/sidebar
+13: 
+14: // Structure Component?
 
 Backtrace:
-/Users/jwhitby/Documents/GitHub - Web - Sources/WN-Alcatraz/static/css/wn-cms-styles.sass:8
+/Users/jwhitby/Documents/GitHub - Web - Sources/WN-Alcatraz/static/css/wn-cms-styles.sass:9
 /Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:1070:in `parse_mixin_definition'
 /Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:639:in `parse_line'
 /Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:525:in `build_tree'
@@ -41,4 +41,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid mixin \"======\".\A         on line 8 of /Users/jwhitby/Documents/GitHub - Web - Sources/WN-Alcatraz/static/css/wn-cms-styles.sass\A \A 3: @import components/typography\A 4: @import components/breadcrumb\A 5: @import components/quicklinks\A 6: <<<<<<< HEAD\A 7: @import components/qqc\A 8: =======\A 9: @import components/sidebar\A 10: \A 11: // Structure Component?\A 12: .col-2-1 > div:last-child \A 13:   border-left: 1px solid #959595"; }
+  content: "Error: Invalid mixin \"======\".\A         on line 9 of /Users/jwhitby/Documents/GitHub - Web - Sources/WN-Alcatraz/static/css/wn-cms-styles.sass\A \A 4: @import components/breadcrumb\A 5: @import components/quicklinks\A 6: <<<<<<< HEAD\A 7: <<<<<<< HEAD\A 8: @import components/qqc\A 9: =======\A 10: =======\A 11: >>>>>>> FETCH_HEAD\A 12: @import components/sidebar\A 13: \A 14: // Structure Component?"; }
