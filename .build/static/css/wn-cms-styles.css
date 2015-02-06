@@ -196,7 +196,6 @@ h4.tabcolour {
   width: 110px;
   text-align: center;
   margin-right: 10px;
-  background: url(http://www.worldnomads.com/Media/Default/shareimages/sharecounter-line-dark.png) no-repeat right top;
   padding-right: 20px;
   margin-right: 20px;
   margin-bottom: 0; }
@@ -250,6 +249,8 @@ h4.tabcolour {
   box-shadow: #ccc 0px 0px 12px; }
   #sharetools-long .normal-content {
     margin-top: 0; }
+    #sharetools-long .normal-content #sharedcount {
+      background: url(http://www.worldnomads.com/Media/Default/shareimages/sharecounter-line-dark.png) no-repeat right top; }
 
 .col-2-1 > div:last-child {
   border-left: 1px solid #959595;
