@@ -1,0 +1,163 @@
+// sharetools
+#socialarea 
+  float: left
+  margin-bottom: 0
+
+#share-icons 
+  float: left
+  a
+    &.twitter,
+    &.facebook,
+    &.linkedin,
+    &.pinterest,
+    &.gplus, 
+    &.stumbleupon,
+    &.plus
+      float: left
+      margin-right: 10px
+      background: #c4c4c4
+      padding: 12px
+      color: #fff
+      text-decoration: none
+      font-size: 24px
+      font-family: "WNI"
+      line-height: 24px
+      margin-bottom: 10px
+      &:hover
+        cursor: pointer 
+    &.twitter 
+      background: #69c1f3
+    &.twitter:hover 
+      background: #5ba7d2
+    &.facebook 
+      background: #2c4066
+    &.facebook:hover 
+      background: #415f9a
+    &.linkedin 
+      background: #0074a1      
+    &.linkedin:hover 
+      background: #025676
+    &.pinterest 
+      background: #cb2027
+    &.pinterest:hover 
+      background: #8f2027
+    &.gplus 
+      background: #eb4026
+    &.gplus:hover 
+      background: #c7341e
+    &.stumbleupon 
+      background: #ea4b24
+    &.stumbleupon:hover 
+      background: #cb4321
+    &.plus,
+    &.plus.open 
+      background: #c5c5c5
+    &.plus:hover,
+    &.plus.open:hover 
+      background: #848688
+    &.plus:after 
+      content: "\e60a"       
+    &.plus.open:after 
+      content: "\e60b"
+    &.twitter,
+    &.facebook,
+    &.plus,
+    &.pinterest,
+    &.gplus
+      padding: 11px 12px
+      margin-bottom: 5px
+    &.twitter,
+    &.facebook
+      span 
+        font-size: 16px
+        font-weight: 300
+        font-family: "Ubuntu"
+        margin-top: 0
+        margin-right: 8px
+        float: left
+    img 
+      width: 28px
+      height: 28px
+    &.stumbleupon,
+    &.linkedin 
+      padding: 8px 10px
+    
+#sharedcount 
+  float: left
+  color: #f59b00
+  width: 110px
+  text-align: center
+  margin-right: 10px
+  background: url(http://www.worldnomads.com/Media/Default/shareimages/sharecounter-line-dark.png) no-repeat right top
+  padding-right: 20px
+  margin-right: 20px
+  margin-bottom: 0
+  p 
+    text-transform: uppercase
+    font-size: 12px
+    color: #8a8c8e
+  #total
+    font-size: 62px
+    font-weight: 500
+
+@media all and (max-width: 900px)
+  #share-icons 
+    a
+      &.twitter,
+      &.facebook
+        span 
+          display: none
+      &.facebook:before,
+      &.twitter:before
+        font-size: 16px
+        font-weight: 300
+        font-family: "Ubuntu"
+        margin-top: 0
+        margin-right: 8px
+        float: left
+      &.twitter:before
+        content: "Tweet"
+      &.facebook:before
+        content: "Share"
+
+@media all and (max-width: 630px)
+  #share-icons
+    width: 280px
+@media all and (max-width: 500px)
+  #share-icons 
+    width: 130px
+    a
+      &.plus
+        display: none
+      &.facebook:before,
+      &.twitter:before
+        display: none
+
+// Small widget
+#sharetools-small
+  margin-top: 16px
+  float: left
+  margin-left: 20px
+  #share-icons 
+    a
+      &.twitter,
+      &.facebook
+        span 
+          display: none
+      &.facebook:before,
+      &.twitter:before
+        display: nones
+
+
+// Long widget
+#sharetools-long 
+  width: 100%
+  float: left
+  padding-top: 28px
+  padding-bottom: 8px
+  margin: 0
+  box-shadow: #ccc 0px 0px 12px
+  .normal-content 
+    margin-top: 0
+
+

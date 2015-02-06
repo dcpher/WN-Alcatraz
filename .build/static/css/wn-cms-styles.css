@@ -95,8 +95,6 @@ ul.qlinks {
   margin-bottom: 20px; }
   #wnqqcalculator #qqc .qqc-container .departure-date {
     width: 100%; }
-  #wnqqcalculator #qqc .qqc-container .another {
-    margin-top: 90px; }
 
 .tabcolour {
   background: #3dc0c8;
@@ -111,7 +109,8 @@ h4.tabcolour {
   padding-left: 20px;
   padding-bottom: 4px;
   padding-top: 4px;
-  color: #ffffff; }
+  color: #ffffff;
+  clear: both; }
 
 .right-coloumn ul.related {
   margin: 0 20px; }
@@ -123,6 +122,134 @@ h4.tabcolour {
       display: block;
       color: #228dd5;
       font-size: 0.8125rem; }
+
+#socialarea {
+  float: left;
+  margin-bottom: 0; }
+
+#share-icons {
+  float: left; }
+  #share-icons a.twitter, #share-icons a.facebook, #share-icons a.linkedin, #share-icons a.pinterest, #share-icons a.gplus, #share-icons a.stumbleupon, #share-icons a.plus {
+    float: left;
+    margin-right: 10px;
+    background: #c4c4c4;
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "WNI";
+    line-height: 24px;
+    margin-bottom: 10px; }
+    #share-icons a.twitter:hover, #share-icons a.facebook:hover, #share-icons a.linkedin:hover, #share-icons a.pinterest:hover, #share-icons a.gplus:hover, #share-icons a.stumbleupon:hover, #share-icons a.plus:hover {
+      cursor: pointer; }
+  #share-icons a.twitter {
+    background: #69c1f3; }
+  #share-icons a.twitter:hover {
+    background: #5ba7d2; }
+  #share-icons a.facebook {
+    background: #2c4066; }
+  #share-icons a.facebook:hover {
+    background: #415f9a; }
+  #share-icons a.linkedin {
+    background: #0074a1; }
+  #share-icons a.linkedin:hover {
+    background: #025676; }
+  #share-icons a.pinterest {
+    background: #cb2027; }
+  #share-icons a.pinterest:hover {
+    background: #8f2027; }
+  #share-icons a.gplus {
+    background: #eb4026; }
+  #share-icons a.gplus:hover {
+    background: #c7341e; }
+  #share-icons a.stumbleupon {
+    background: #ea4b24; }
+  #share-icons a.stumbleupon:hover {
+    background: #cb4321; }
+  #share-icons a.plus, #share-icons a.plus.open {
+    background: #c5c5c5; }
+  #share-icons a.plus:hover, #share-icons a.plus.open:hover {
+    background: #848688; }
+  #share-icons a.plus:after {
+    content: ""; }
+  #share-icons a.plus.open:after {
+    content: ""; }
+  #share-icons a.twitter, #share-icons a.facebook, #share-icons a.plus, #share-icons a.pinterest, #share-icons a.gplus {
+    padding: 11px 12px;
+    margin-bottom: 5px; }
+  #share-icons a.twitter span, #share-icons a.facebook span {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Ubuntu";
+    margin-top: 0;
+    margin-right: 8px;
+    float: left; }
+  #share-icons a img {
+    width: 28px;
+    height: 28px; }
+  #share-icons a.stumbleupon, #share-icons a.linkedin {
+    padding: 8px 10px; }
+
+#sharedcount {
+  float: left;
+  color: #f59b00;
+  width: 110px;
+  text-align: center;
+  margin-right: 10px;
+  background: url(http://www.worldnomads.com/Media/Default/shareimages/sharecounter-line-dark.png) no-repeat right top;
+  padding-right: 20px;
+  margin-right: 20px;
+  margin-bottom: 0; }
+  #sharedcount p {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #8a8c8e; }
+  #sharedcount #total {
+    font-size: 62px;
+    font-weight: 500; }
+
+@media all and (max-width: 900px) {
+  #share-icons a.twitter span, #share-icons a.facebook span {
+    display: none; }
+  #share-icons a.facebook:before, #share-icons a.twitter:before {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Ubuntu";
+    margin-top: 0;
+    margin-right: 8px;
+    float: left; }
+  #share-icons a.twitter:before {
+    content: "Tweet"; }
+  #share-icons a.facebook:before {
+    content: "Share"; } }
+@media all and (max-width: 630px) {
+  #share-icons {
+    width: 280px; } }
+@media all and (max-width: 500px) {
+  #share-icons {
+    width: 130px; }
+    #share-icons a.plus {
+      display: none; }
+    #share-icons a.facebook:before, #share-icons a.twitter:before {
+      display: none; } }
+#sharetools-small {
+  margin-top: 16px;
+  float: left;
+  margin-left: 20px; }
+  #sharetools-small #share-icons a.twitter span, #sharetools-small #share-icons a.facebook span {
+    display: none; }
+  #sharetools-small #share-icons a.facebook:before, #sharetools-small #share-icons a.twitter:before {
+    display: nones; }
+
+#sharetools-long {
+  width: 100%;
+  float: left;
+  padding-top: 28px;
+  padding-bottom: 8px;
+  margin: 0;
+  box-shadow: #ccc 0px 0px 12px; }
+  #sharetools-long .normal-content {
+    margin-top: 0; }
 
 .col-2-1 > div:last-child {
   border-left: 1px solid #959595;
