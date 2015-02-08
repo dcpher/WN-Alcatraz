@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 @charset "UTF-8";
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.1;
@@ -9,12 +8,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
   font-size: 3.375rem;
-  letter-spacing: -1;
+  letter-spacing: -1px;
   margin: 0.25rem 0 1rem 0; }
 
 h2 {
   font-size: 2.75rem;
-  letter-spacing: -1;
+  letter-spacing: -1px;
   margin: 0.5rem 0 2rem 0; }
 
 h3 {
@@ -98,11 +97,11 @@ ul.qlinks {
     width: 100%; }
 
 .tabcolour {
-  background: #3dc0c8;
+  background: #40c1ba;
   padding-bottom: 4px; }
 
 h4.tabcolour {
-  background: #3dc0c8;
+  background: #40c1ba;
   font-size: 20px;
   font-weight: 300;
   line-height: 26px;
@@ -140,7 +139,8 @@ h4.tabcolour {
     font-size: 24px;
     font-family: "WNI";
     line-height: 24px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    padding: 11px 12px; }
     #share-icons a.twitter:hover, #share-icons a.facebook:hover, #share-icons a.linkedin:hover, #share-icons a.pinterest:hover, #share-icons a.gplus:hover, #share-icons a.stumbleupon:hover, #share-icons a.plus:hover {
       cursor: pointer; }
   #share-icons a.twitter {
@@ -175,9 +175,6 @@ h4.tabcolour {
     content: ""; }
   #share-icons a.plus.open:after {
     content: ""; }
-  #share-icons a.twitter, #share-icons a.facebook, #share-icons a.plus, #share-icons a.pinterest, #share-icons a.gplus {
-    padding: 11px 12px;
-    margin-bottom: 5px; }
   #share-icons a.twitter span, #share-icons a.facebook span {
     font-size: 16px;
     font-weight: 300;
@@ -193,20 +190,25 @@ h4.tabcolour {
 
 #sharedcount {
   float: left;
-  color: #f59b00;
-  width: 110px;
-  text-align: center;
-  margin-right: 10px;
-  padding-right: 20px;
-  margin-right: 20px;
+  color: #444642;
+  text-align: left;
   margin-bottom: 0; }
   #sharedcount p {
     text-transform: uppercase;
     font-size: 12px;
-    color: #8a8c8e; }
+    color: #8c8c8c;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    float: left;
+    display: inline-block; }
   #sharedcount #total {
-    font-size: 62px;
-    font-weight: 500; }
+    font-size: 3.375rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+    margin-right: 0.625rem;
+    float: left;
+    display: inline-block;
+    line-height: 1.1; }
 
 @media all and (max-width: 900px) {
   #share-icons a.twitter span, #share-icons a.facebook span {
@@ -233,7 +235,7 @@ h4.tabcolour {
     #share-icons a.facebook:before, #share-icons a.twitter:before {
       display: none; } }
 #sharetools-small {
-  margin-top: 16px;
+  margin-top: 0px;
   float: left;
   margin-left: 20px; }
   #sharetools-small #share-icons a.twitter span, #sharetools-small #share-icons a.facebook span {
@@ -251,7 +253,10 @@ h4.tabcolour {
   #sharetools-long .normal-content {
     margin-top: 0; }
     #sharetools-long .normal-content #sharedcount {
-      background: url(http://www.worldnomads.com/Media/Default/shareimages/sharecounter-line-dark.png) no-repeat right top; }
+      background: url(http://www.worldnomads.com/Media/Default/shareimages/sharecounter-line-dark.png) no-repeat right top;
+      margin-right: 0.5rem; }
+      #sharetools-long .normal-content #sharedcount p {
+        margin-right: 1.5rem; }
 
 .col-2-1 > div:last-child {
   border-left: 1px solid #959595;
@@ -325,49 +330,3 @@ div.faq h4 {
   font-weight: 300; }
 
 /*# sourceMappingURL=wn-cms-styles.css.map */
-=======
-/*
-Error: Invalid mixin "======".
-        on line 9 of /Users/CPotter/Documents/Source/WN-Alcatraz/static/css/wn-cms-styles.sass
-
-4: @import components/breadcrumb
-5: @import components/quicklinks
-6: <<<<<<< HEAD
-7: <<<<<<< HEAD
-8: @import components/qqc
-9: =======
-10: =======
-11: >>>>>>> FETCH_HEAD
-12: @import components/sidebar
-13: 
-14: // Structure Component?
-
-Backtrace:
-/Users/CPotter/Documents/Source/WN-Alcatraz/static/css/wn-cms-styles.sass:9
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:1070:in `parse_mixin_definition'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:639:in `parse_line'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:525:in `build_tree'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:544:in `block in append_children'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `each'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `append_children'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:396:in `_to_tree'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:350:in `watch_or_update'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:50:in `process_result'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/bin/scss:13:in `<top (required)>'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/bin/scss:23:in `load'
-/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid mixin \"======\".\A         on line 9 of /Users/CPotter/Documents/Source/WN-Alcatraz/static/css/wn-cms-styles.sass\A \A 4: @import components/breadcrumb\A 5: @import components/quicklinks\A 6: <<<<<<< HEAD\A 7: <<<<<<< HEAD\A 8: @import components/qqc\A 9: =======\A 10: =======\A 11: >>>>>>> FETCH_HEAD\A 12: @import components/sidebar\A 13: \A 14: // Structure Component?"; }
->>>>>>> Stashed changes
