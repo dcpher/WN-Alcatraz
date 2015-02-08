@@ -1,0 +1,311 @@
+{% extends "wn-base.html" %}
+{% block content %}
+
+<!-- Header Content -->
+<div class="hero-content-panel dark photo header">
+
+  <div class="hero-content">
+    <h2>Learn how travellers like you are giving back through WaterAid. <span>World Nomads change lives.</span></h2>
+    <span class="organisation">Supporting water and sanitation projects</span>
+    <span class="location">Timor-Leste</span>
+    <div class="cta">
+      <form method="get" action="http://www.worldnomads.com/see-how-travellers-change-lives-with-wateraid">
+        <button class="button-primary">Read our story <span></span></button>
+      </form>
+    </div>
+
+
+   <div class="down-arrow scroll-to-p01" style="width:44px; bottom:-80px;"></div>
+
+  </div>
+
+
+
+</div>
+
+<style>
+@media all and (min-width: 860px) {
+body .hero-content-panel.photo.header {
+    background-image: url('http://www.worldnomads.com/Media/Default/FootprintsImages/WaterAid_hero_full.jpg');
+  }
+}
+@media all and (max-width: 860px) {
+body .hero-content-panel.photo.header {
+    background-image: url('http://www.worldnomads.com/Media/Default/FootprintsImages/WaterAid_hero_tablet.jpg');
+  }
+
+}
+@media all and (max-width: 500px) {
+  body .hero-content-panel.photo.header {
+    background-image: url('http://www.worldnomads.com/Media/Default/FootprintsImages/WaterAid_hero_mobile.jpg');
+  }
+}
+</style>
+
+<script>
+$(".scroll-to-p01").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".how-you-make-a-difference").offset().top
+    }, 1000); 
+});
+</script>
+
+<!-- End Header Content -->
+
+<!-- CP 1 -->
+<div class="hero-content-panel dark how-you-make-a-difference">
+  <div class="hero-content">
+
+    <h2>How you can make a difference.</h2>
+
+    <p>Every time a World Nomad buys travel insurance, they can choose to add a micro-donation to support a community project and help change lives.
+    <p class="tablet-up">So far, over 900,000 World Nomads have raised more than $2 million for 121 projects.</p>
+
+    <div class="video">
+       <iframe class="vid-center" src="//player.vimeo.com/video/103967475?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+
+    <label><span class="tablet-up"></span><a href="/people/christy-mccarthy">Christy McCarthy</a> Co-Founder, Footprints </label>
+  </div>
+</div>
+
+<style>
+
+   iframe.vid-center {
+       padding: 0 25%;
+   }
+
+@media (max-width: 500px) {
+   iframe.vid-center {
+       padding: 0 5%;
+   }
+  .fluid-vids {
+       min-height: 70px;
+   }
+}
+</style>
+
+<script>
+  (function ( window, document, undefined ) {
+
+    /*
+     * Grab all iframes on the page or return
+     */
+    var iframes = document.getElementsByTagName( 'iframe' );
+
+    /*
+     * Loop through the iframes array
+     */
+    for ( var i = 0; i < iframes.length; i++ ) {
+
+      var iframe = iframes[i],
+
+      /*
+         * RegExp, extend this if you need more players
+         */
+      players = /www.youtube.com|player.vimeo.com/;
+
+      /*
+       * If the RegExp pattern exists within the current iframe
+       */
+      if ( iframe.src.search( players ) > 0 ) {
+
+        /*
+         * Calculate the video ratio based on the iframe's w/h dimensions
+         */
+        var videoRatio        = ( iframe.height / iframe.width ) * 100;
+        
+        /*
+         * Replace the iframe's dimensions and position
+         * the iframe absolute, this is the trick to emulate
+         * the video ratio
+         */
+
+        iframe.style.position = 'absolute';
+        iframe.style.top      = '0';
+        iframe.width          = '100%';
+        iframe.height         = '100%';
+
+        
+        /*
+         * Wrap the iframe in a new <div> which uses a
+         * dynamically fetched padding-top property based
+         * on the video's w/h dimensions
+         */
+        var wrap              = document.createElement( 'div' );
+        wrap.className        = 'fluid-vids';
+        wrap.style.width      = '100%';
+        wrap.style.position   = 'relative';
+        wrap.style.paddingTop = videoRatio/2 + '%';
+        
+        /*
+         * Add the iframe inside our newly created <div>
+         */
+        var iframeParent      = iframe.parentNode;
+        iframeParent.insertBefore( wrap, iframe );
+        wrap.appendChild( iframe );
+
+      }
+
+    }
+
+  })( window, document );
+</script>
+<!-- CP 1 END -->
+
+<!-- CP 2 -->
+<div class="hero-content-panel color yellow power-of-travel">
+
+  <div class="hero-content">
+    <h2>We believe in the power of travel to change lives. Everyone can choose to give a little back to the places & people that they visit.</h2>
+    <label><a href="/people/simon-monk">Simon Monk</a> Founder, World Nomads.</label>
+  </div>
+
+</div>
+<!-- CP 2 END -->
+
+<!-- CP 4 -->
+<div class="hero-content-panel change-the-world dark">
+    <div class="hero-content">
+    <h2>Small enough to change the world.</h2>
+    <div class="col-1-1-1">
+      <div class="first">
+        <img src="http://www.worldnomads.com/Media/Default/FootprintsImages/SchoolGirl.jpg">
+        <h4>Small</h4>
+        <p>
+          A billion people live on less than $2 a day. For
+          less than the price of a cup of coffee, you
+          too can create change and opportunity.
+        </p>
+      </div>
+
+      <div>
+        <img src="http://www.worldnomads.com/Media/Default/FootprintsImages/PlantingSeeds.jpg">
+        <h4>Easy</h4>
+        <p>
+          Creating meaningful change has never been so easy;
+          all you have to do is choose which project to
+          help fund when you get a quote.
+        </p>
+      </div>
+
+      <div class="last">
+        <img src="http://www.worldnomads.com/Media/Default/FootprintsImages/LadyBaby.jpg">
+        <h4>Transparent</h4>
+        <p>
+          100% of funds raised go to your chosen project.
+          All administration and technology are paid by
+          World Nomads as our commitment to you.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CP 4 END -->
+
+<!-- CP 5 -->
+<div class="hero-content-panel photo new_orleans">
+  <div class="hero-content">
+    <h2>The Red Flame Hunters</h2>
+    <div class="video">
+  
+
+<iframe class="vid-left" width="400" height="225" src="//www.youtube.com/embed/tQyFWd7jUcw" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <span class="organisation">Youth Education & Empowerment</span>
+    <span class="location">New Orleans, USA</span>
+  </div>
+</div>
+
+<style>
+
+   iframe.vid-left {
+       padding: 0 50% 0 0;
+   }
+
+@media (max-width: 500px) {
+   iframe.vid-left {
+       padding: 0 5%;
+   }
+   iframe.vid-left {
+       max-height: 140px;
+   }
+}
+
+body .hero-content-panel.photo.new_orleans {
+    background-image: url('http://www.worldnomads.com/Media/Default/FootprintsImages/new_orleans_hero_full.jpg');
+  }
+
+@media all and (max-width: 860px) {
+body .hero-content-panel.photo.new_orleans {
+    background-image: url('http://www.worldnomads.com/Media/Default/FootprintsImages/new_orleans_hero_tablet.jpg');
+  }
+
+}
+@media all and (max-width: 500px) {
+body .hero-content-panel.photo.new_orleans {
+    background-image: url('http://www.worldnomads.com/Media/Default/FootprintsImages/new_orleans_hero_mobile.jpg');
+  }
+
+</style>
+<!-- CP 5 END -->
+
+<!-- CP 6 -->
+<div class="hero-content-panel discover dark">
+  <div class="hero-content">
+    <h2>Discover what travellers like you have achieved.</h2>
+    <div class="col-2-2">
+      <div>
+        <div>
+          <a href="http://www.footprintsnetwork.org/project/91/-Improving-kids-education-Himalaya-.aspx" target="_blank"><img src="http://www.worldnomads.com/Media/Default/FootprintsImages/3Students.jpg"></a>
+          <h4>Education</h4>
+          <p>
+            <a href="http://www.footprintsnetwork.org/project/91/-Improving-kids-education-Himalaya-.aspx" target="_blank">17,248 travellers</a>
+            helped improve children's education in Nepal.
+          </p>
+        </div>
+
+        <div>
+          <a href="http://www.footprintsnetwork.org/project/68/Community-food-gardens-KwaZulu-Natal.aspx" target="_blank"><img src="http://www.worldnomads.com/Media/Default/FootprintsImages/Food.jpg"></a>
+          <h4>Food</h4>
+          <p>
+            <a href="http://www.footprintsnetwork.org/project/68/Community-food-gardens-KwaZulu-Natal.aspx" target="_blank">14,963 travellers</a>
+            helped improve people's food security in South Africa.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <a href="http://www.footprintsnetwork.org/project/66/Protecting-children-in-Vanuatu-.aspx" target="_blank"><img src="http://www.worldnomads.com/Media/Default/FootprintsImages/ProtectingKids.jpg"></a>
+          <h4>Health</h4>
+          <p>
+            <a href="http://www.footprintsnetwork.org/project/66/Protecting-children-in-Vanuatu-.aspx" target="_blank">12,517 travellers</a>
+            helped improve children's well-being in Vanuatu.
+          </p>
+        </div>
+
+        <div>
+          <a href="http://www.footprintsnetwork.org/project/21/Capture-Fog-Nets-for-drinking-water-Tiactac-village.aspx" target="_blank"><img src="http://www.worldnomads.com/Media/Default/FootprintsImages/DrinkingWater.jpg"></a>
+          <h4>Clean Water</h4>
+          <p>
+            <a href="http://www.footprintsnetwork.org/project/21/Capture-Fog-Nets-for-drinking-water-Tiactac-village.aspx" target="_blank">8,106 travellers</a>
+           helped build fog nets for drinking water in Guatemala.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CP 6 END -->
+
+<!-- CP 7 -->
+<div class="hero-content-panel external-calculator">
+  <div class="hero-content">
+    <h2 style="color:#31322d;">Help change lives.</h2>
+    <p style="color:#31322d;">Buy travel insurance &amp; help make a difference</p>
+</div>     
+<!-- CP 7 END -->
+
+{% endblock content%}

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @charset "UTF-8";
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.1;
@@ -324,3 +325,49 @@ div.faq h4 {
   font-weight: 300; }
 
 /*# sourceMappingURL=wn-cms-styles.css.map */
+=======
+/*
+Error: Invalid mixin "======".
+        on line 9 of /Users/CPotter/Documents/Source/WN-Alcatraz/static/css/wn-cms-styles.sass
+
+4: @import components/breadcrumb
+5: @import components/quicklinks
+6: <<<<<<< HEAD
+7: <<<<<<< HEAD
+8: @import components/qqc
+9: =======
+10: =======
+11: >>>>>>> FETCH_HEAD
+12: @import components/sidebar
+13: 
+14: // Structure Component?
+
+Backtrace:
+/Users/CPotter/Documents/Source/WN-Alcatraz/static/css/wn-cms-styles.sass:9
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:1070:in `parse_mixin_definition'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:639:in `parse_line'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:525:in `build_tree'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:544:in `block in append_children'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `each'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `append_children'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:396:in `_to_tree'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:350:in `watch_or_update'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.4.9/bin/scss:13:in `<top (required)>'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/bin/scss:23:in `load'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid mixin \"======\".\A         on line 9 of /Users/CPotter/Documents/Source/WN-Alcatraz/static/css/wn-cms-styles.sass\A \A 4: @import components/breadcrumb\A 5: @import components/quicklinks\A 6: <<<<<<< HEAD\A 7: <<<<<<< HEAD\A 8: @import components/qqc\A 9: =======\A 10: =======\A 11: >>>>>>> FETCH_HEAD\A 12: @import components/sidebar\A 13: \A 14: // Structure Component?"; }
+>>>>>>> Stashed changes
