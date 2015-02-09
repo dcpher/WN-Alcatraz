@@ -86,6 +86,7 @@
   //padding-right: 20px
   //margin-right: 20px
   margin-bottom: 0
+  position: relative
   
   p 
     text-transform: uppercase
@@ -95,7 +96,10 @@
     margin-bottom: 0
     float: left
     display: inline-block
-
+    line-height: $default-line-height
+    margin-right: rem-calc(8px)
+    //position: absolute // incase shares wrap
+    //bottom: 16px
     
   #total
     font-size: $h1-font-size
@@ -108,7 +112,7 @@
 
       
 
-@media all and (max-width: 900px)
+@media all and (max-width: 860px)
   #share-icons 
     a
       &.twitter,
@@ -154,7 +158,24 @@
           display: none
       &.facebook:before,
       &.twitter:before
-        display: nones
+        display: none
+          
+
+@media all and (max-width: 700px)
+  #sharetools-small
+    width: 100%
+    //float: left
+    padding-top: 10px
+    padding-bottom: 8px
+    margin: 0 0 0 20
+    #sharedcount 
+      background: url(http://www.worldnomads.com/Media/Default/shareimages/sharecounter-line-dark.png) no-repeat right top
+      margin-right: rem-calc(8px)
+      p
+        margin-right: rem-calc(24px)
+
+    #share-icons
+      margin-top: 3px
 
 
 // Long widget

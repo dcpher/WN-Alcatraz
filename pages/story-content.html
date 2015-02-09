@@ -1,6 +1,8 @@
 {% extends "wn-base.html" %}
 {% block content %}
 
+
+
 <!-- Hero Content Panel Start -->
 
 <div class="hero-content-panel scholarship">
@@ -41,14 +43,14 @@
   /* Add link to Tablet Image */
   @media all and (max-width: 860px) {
     .hero-content-panel.scholarship {
-      background-image: url('/static/Media/Default/hero/hero_srilanka_tablet.jpg');
+      background-image: url('/static/Media/Default/hero/hero_iran-gholam_tablet.jpg');
       min-height: 440px;
     }
   }
   /* Add link to Mobile Image */
   @media all and (max-width: 500px) {
     .hero-content-panel.scholarship {
-      background-image: url('/static/Media/Default/hero/hero_srilanka_mobile.jpg');
+      background-image: url('/static/Media/Default/hero/hero_iran-gholam_mobile.jpg');
     }
     .hero-content-panel h2, .hero-content-panel h1 {
       margin-top: 160px;
@@ -156,132 +158,132 @@ Tomorrow I will get the picture sent to him. Hopefully he will decide to put two
     <div class="right-coloumn">
       <h4 class="tabcolour">Share this…</h4>
       <!-- Share tools -->
-<div id="sharetools-small">
-  <div id="socialarea">     
-    <div id="sharedcount">
-      <div id="total"></div>
-      <p>Shares</p> 
-    </div>
-    <div id="share-icons">
-      <a class="facebook" target="_blank"><span>Share on Facebook</span>&#xe607;</a>
-      <a class="twitter" target="_blank"><span>Share on Twitter</span>&#xe602;</a>
-      <a class="pinterest">&#xe603;</a>
-      <a class="gplus" target="_blank">&#xe605;</a>
-      <a class="linkedin" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/linkedin-share-icon.png" /></a>
-      <a class="stumbleupon" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/stumble-share-icon.png" /></a>
-      <a class="plus"></a>
-    </div>
-  </div>
-</div>
+        <div id="sharetools-small">
+          <div id="socialarea">     
+            <div id="sharedcount">
+              <div id="total"></div>
+              <p>Shares</p> 
+            </div>
+            <div id="share-icons">
+              <a class="facebook" target="_blank"><span>Share on Facebook</span>&#xe607;</a>
+              <a class="twitter" target="_blank"><span>Share on Twitter</span>&#xe602;</a>
+              <a class="pinterest">&#xe603;</a>
+              <a class="gplus" target="_blank">&#xe605;</a>
+              <a class="linkedin" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/linkedin-share-icon.png" /></a>
+              <a class="stumbleupon" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/stumble-share-icon.png" /></a>
+              <a class="plus"></a>
+            </div>
+          </div>
+        </div>
 
-<script>
-  // Build the target srcs for the icons on click.
-  var socialMedialUrl          = window.location;
-  
-  var facebookParamU           = "http://bit.ly/16wBqhs";
+        <script>
+          // Build the target srcs for the icons on click.
+          var socialMedialUrl          = window.location;
 
-  var twitterParamText         = "@WorldNomads change lives with @wateraid. See how we did it. http://bit.ly/16wBqhs";
+          var facebookParamU           = "http://bit.ly/16wBqhs";
 
-  var pinParamDescription      = "6,880 children now have clean hands and water to drink thanks to 106,219 travellers like you! See how we did it.";
-  var pinParamMedia            = "http://www.worldnomads.com/Media/Default/footprints/wateraid/Infographic_WaterAid_Pinterest.jpg";
-  
-  var linkedParamTitle         = "World Nomads change lives with Water Aid";
-  var linkedParamDescription   = "6,880 children now have clean hands and water to drink thanks to 106,219 travellers like you!";
+          var twitterParamText         = "@WorldNomads change lives with @wateraid. See how we did it. http://bit.ly/16wBqhs";
 
-  $(function() {
-    var $plus = $(".plus");
-    var $toggleableButtons = $(".pinterest, .gplus, .linkedin, .stumbleupon").hide();
-    $plus.on("click", function() {
-      var $this = $(this);
-      $toggleableButtons.toggle();
-      $plus.toggleClass("open");
-    });
-  });
-  
-  $(function() {
-    var $si = $(".socialicon");
-    var targetUrl = "";
-    $si.on("click", function() {
-      var $this = $(this);
-      if ($this.hasClass("facebook")) {
-        targetUrl = "http://www.facebook.com/share.php?u=" + facebookParamU;
-        window.open(targetUrl, 'name', 'width=600,height=400');
-      }
-      else if ($this.hasClass("twitter")) {
-        targetUrl = "https://twitter.com/intent/tweet?text=" + twitterParamText;
-        window.open(targetUrl, 'name', 'width=600,height=400');
-      }
-      else if ($this.hasClass("pinterest")) {
-        targetUrl = "http://pinterest.com/pin/create/button?description=" + pinParamDescription + "&media=" + pinParamMedia; + "&url=" + socialMedialUrl; 
-        window.open(targetUrl, 'name', 'width=755,height=400,scrollbars=no');
-      }
-      else if ($this.hasClass("gplus")) {
-        targetUrl = "https://plus.google.com/share?url=" + socialMedialUrl;
-        window.open(targetUrl, 'name', 'width=600,height=400');
-      }
-      else if ($this.hasClass("linkedin")) {
-        targetUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + socialMedialUrl + "&title=" + linkedParamTitle + "&summary=" + linkedParamDescription;
-        window.open(targetUrl, 'name', 'width=600,height=400');
-      }
-      else if ($this.hasClass("stumbleupon")) {
-        targetUrl = "http://www.stumbleupon.com/badge/?url=" + socialMedialUrl;
-        window.open(targetUrl, 'name', 'width=600,height=400');
-      }
-    });
-  });
-</script>
+          var pinParamDescription      = "6,880 children now have clean hands and water to drink thanks to 106,219 travellers like you! See how we did it.";
+          var pinParamMedia            = "http://www.worldnomads.com/Media/Default/footprints/wateraid/Infographic_WaterAid_Pinterest.jpg";
+
+          var linkedParamTitle         = "World Nomads change lives with Water Aid";
+          var linkedParamDescription   = "6,880 children now have clean hands and water to drink thanks to 106,219 travellers like you!";
+
+          $(function() {
+            var $plus = $(".plus");
+            var $toggleableButtons = $(".pinterest, .gplus, .linkedin, .stumbleupon").hide();
+            $plus.on("click", function() {
+              var $this = $(this);
+              $toggleableButtons.toggle();
+              $plus.toggleClass("open");
+            });
+          });
+
+          $(function() {
+            var $si = $(".socialicon");
+            var targetUrl = "";
+            $si.on("click", function() {
+              var $this = $(this);
+              if ($this.hasClass("facebook")) {
+                targetUrl = "http://www.facebook.com/share.php?u=" + facebookParamU;
+                window.open(targetUrl, 'name', 'width=600,height=400');
+              }
+              else if ($this.hasClass("twitter")) {
+                targetUrl = "https://twitter.com/intent/tweet?text=" + twitterParamText;
+                window.open(targetUrl, 'name', 'width=600,height=400');
+              }
+              else if ($this.hasClass("pinterest")) {
+                targetUrl = "http://pinterest.com/pin/create/button?description=" + pinParamDescription + "&media=" + pinParamMedia; + "&url=" + socialMedialUrl; 
+                window.open(targetUrl, 'name', 'width=755,height=400,scrollbars=no');
+              }
+              else if ($this.hasClass("gplus")) {
+                targetUrl = "https://plus.google.com/share?url=" + socialMedialUrl;
+                window.open(targetUrl, 'name', 'width=600,height=400');
+              }
+              else if ($this.hasClass("linkedin")) {
+                targetUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + socialMedialUrl + "&title=" + linkedParamTitle + "&summary=" + linkedParamDescription;
+                window.open(targetUrl, 'name', 'width=600,height=400');
+              }
+              else if ($this.hasClass("stumbleupon")) {
+                targetUrl = "http://www.stumbleupon.com/badge/?url=" + socialMedialUrl;
+                window.open(targetUrl, 'name', 'width=600,height=400');
+              }
+            });
+          });
+        </script>
 
 
-<!-- Social Counter -->
-<script>
-jQuery.sharedCount = function(url, fn) {
- url = encodeURIComponent(url || location.href);
- var domain = "//free.sharedcount.com/"; /* SET DOMAIN */
- var apikey = "8e4b7187bcfca463ceeca1577105f710bf47edd1" /*API KEY HERE*/
- var arg = {
-  data: {
-   url : url,
-   apikey : apikey
-  },
-  url: domain,
-  cache: true,
-  dataType: "json"
- };
- if ('withCredentials' in new XMLHttpRequest) {
-  arg.success = fn;
- }
- else {
-  var cb = "sc_" + url.replace(/\W/g, '');
-  window[cb] = fn;
-  arg.jsonpCallback = cb;
-  arg.dataType += "p";
- }
- return jQuery.ajax(arg);
-};
+        <!-- Social Counter -->
+        <script>
+        jQuery.sharedCount = function(url, fn) {
+         url = encodeURIComponent(url || location.href);
+         var domain = "//free.sharedcount.com/"; /* SET DOMAIN */
+         var apikey = "8e4b7187bcfca463ceeca1577105f710bf47edd1" /*API KEY HERE*/
+         var arg = {
+          data: {
+           url : url,
+           apikey : apikey
+          },
+          url: domain,
+          cache: true,
+          dataType: "json"
+         };
+         if ('withCredentials' in new XMLHttpRequest) {
+          arg.success = fn;
+         }
+         else {
+          var cb = "sc_" + url.replace(/\W/g, '');
+          window[cb] = fn;
+          arg.jsonpCallback = cb;
+          arg.dataType += "p";
+         }
+         return jQuery.ajax(arg);
+        };
 
-jQuery(document).ready(function($){
- var targetUrl = "http://" + location.host + location.pathname;
+        jQuery(document).ready(function($){
+         var targetUrl = "http://" + location.host + location.pathname;
 
- $.sharedCount(targetUrl, function(data){
-  var totalShares = data.Twitter + data.Facebook.like_count + data.GooglePlusOne + data.Facebook.share_count + data.Pinterest + data.LinkedIn + data.StumbleUpon;
-  if (totalShares <= 48) {
-   totalShares = 888;
-  }
-  $("#tweetscount").text(data.Twitter);    
-  $("#likescount").text(data.Facebook.like_count);
-  $("#facebooksharecount").text(data.Facebook.share_count);
-  $("#plusonescount").text(data.GooglePlusOne);
-  $("#stumbleuponcount").text(data.StumbleUpon);
-  $("#pintrestcount").text(data.Pinterest);
-  $("#linkedincount").text(data.LinkedIn);
-  $("#total").text(totalShares);
-  $("#sharedcount").fadeIn();
+         $.sharedCount(targetUrl, function(data){
+          var totalShares = data.Twitter + data.Facebook.like_count + data.GooglePlusOne + data.Facebook.share_count + data.Pinterest + data.LinkedIn + data.StumbleUpon;
+          if (totalShares <= 48) {
+           totalShares = 888;
+          }
+          $("#tweetscount").text(data.Twitter);    
+          $("#likescount").text(data.Facebook.like_count);
+          $("#facebooksharecount").text(data.Facebook.share_count);
+          $("#plusonescount").text(data.GooglePlusOne);
+          $("#stumbleuponcount").text(data.StumbleUpon);
+          $("#pintrestcount").text(data.Pinterest);
+          $("#linkedincount").text(data.LinkedIn);
+          $("#total").text(totalShares);
+          $("#sharedcount").fadeIn();
 
- });
-});
-</script>
+         });
+        });
+        </script>
 
-<!-- Share tools END -->
+        <!-- Share tools END -->
 
       
 

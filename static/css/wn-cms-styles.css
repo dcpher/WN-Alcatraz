@@ -1,10 +1,44 @@
 @charset "UTF-8";
+.col-2-1 > div:last-child {
+  border-left: 1px solid #959595;
+  padding-left: -1px;
+  width: 25%;
+  margin-left: 9%; }
+
+@media all and (max-width: 860px) {
+  .col-2-1 > div:last-child {
+    border-left: 1px solid #959595;
+    margin-left: -1px;
+    width: 35%; } }
+@media all and (max-width: 700px) {
+  .col-2-1 > div:last-child, .col-2-1 > div:first-child {
+    border-left: none;
+    margin-left: 0px;
+    width: 100%; } }
+@media all and (max-width: 860px) {
+  .col-2-2 {
+    margin-bottom: 0; }
+
+  .col-2-2 > div {
+    width: 100%; }
+
+  .col-2-2 > div > div {
+    width: 49%; } }
+@media all and (max-width: 500px) {
+  .col-2-2 > div {
+    width: 100%; }
+
+  .col-2-2 > div > div {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; } }
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.1;
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   font-style: normal;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-bottom: 0.5rem; }
 
 h1 {
   font-size: 3.375rem;
@@ -192,7 +226,8 @@ h4.tabcolour {
   float: left;
   color: #444642;
   text-align: left;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  position: relative; }
   #sharedcount p {
     text-transform: uppercase;
     font-size: 12px;
@@ -200,7 +235,9 @@ h4.tabcolour {
     margin-top: 2rem;
     margin-bottom: 0;
     float: left;
-    display: inline-block; }
+    display: inline-block;
+    line-height: 1.1;
+    margin-right: 0.5rem; }
   #sharedcount #total {
     font-size: 3.375rem;
     font-weight: 600;
@@ -210,7 +247,7 @@ h4.tabcolour {
     display: inline-block;
     line-height: 1.1; }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 860px) {
   #share-icons a.twitter span, #share-icons a.facebook span {
     display: none; }
   #share-icons a.facebook:before, #share-icons a.twitter:before {
@@ -238,8 +275,21 @@ h4.tabcolour {
   #sharetools-small #share-icons a.twitter span, #sharetools-small #share-icons a.facebook span {
     display: none; }
   #sharetools-small #share-icons a.facebook:before, #sharetools-small #share-icons a.twitter:before {
-    display: nones; }
+    display: none; }
 
+@media all and (max-width: 700px) {
+  #sharetools-small {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    margin: 0 0 0 20; }
+    #sharetools-small #sharedcount {
+      background: url(http://www.worldnomads.com/Media/Default/shareimages/sharecounter-line-dark.png) no-repeat right top;
+      margin-right: 0.5rem; }
+      #sharetools-small #sharedcount p {
+        margin-right: 1.5rem; }
+    #sharetools-small #share-icons {
+      margin-top: 3px; } }
 #sharetools-long {
   width: 100%;
   float: left;
@@ -256,12 +306,6 @@ h4.tabcolour {
         margin-right: 1.5rem; }
     #sharetools-long .normal-content #share-icons {
       margin-top: 3px; }
-
-.col-2-1 > div:last-child {
-  border-left: 1px solid #959595;
-  padding-left: -1px;
-  width: 25%;
-  margin-left: 9%; }
 
 .bottom p a span:after {
   font-family: WNI;
