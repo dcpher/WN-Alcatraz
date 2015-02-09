@@ -88,7 +88,10 @@ p {
 ul.breadcrumb {
   list-style: none;
   padding: 0;
-  margin: 80px 0 0 0; }
+  margin: 80px 0 0 0;
+  clear: both;
+  float: left;
+  width: 100%; }
   ul.breadcrumb li {
     list-style: none;
     padding: 0;
@@ -97,16 +100,50 @@ ul.breadcrumb {
     color: #ffffff;
     font-weight: 300;
     font-size: 14px;
-    line-height: 100%;
+    line-height: 1.1;
     float: left;
     margin-bottom: 8px; }
   ul.breadcrumb li:after {
     font-family: WNI;
     content: "";
-    margin: 1px 4px; }
+    margin: 1px 4px 7px 4px;
+    display: inline-block; }
   ul.breadcrumb li:last-child:after {
     display: none; }
 
+.stories .headercontent {
+  float: left;
+  max-width: 30%; }
+
+.stories p.small {
+  font-size: 14px;
+  margin-top: 16px; }
+
+.stories .sponsor {
+  float: right;
+  margin-top: 240px;
+  width: 140px; }
+
+.stories .sponsor p {
+  text-align: center; }
+
+.stories .sponsor a img {
+  width: 137px;
+  height: 137px;
+  display: inline-block;
+  border: none; }
+
+@media all and (max-width: 860px) {
+  .stories .headercontent {
+    float: left;
+    max-width: 50%; } }
+@media all and (max-width: 500px) {
+  .stories .headercontent {
+    float: left;
+    max-width: 100%;
+    min-height: 550px; }
+    .stories .headercontent h1 {
+      margin-top: 60px; } }
 ul.qlinks {
   display: block; }
   ul.qlinks li {
@@ -307,33 +344,6 @@ h4.tabcolour {
     #sharetools-long .normal-content #share-icons {
       margin-top: 3px; }
 
-.bottom p a span:after {
-  font-family: WNI;
-  content: "";
-  margin: 1px 8px; }
-
-.scholarship .headercontent {
-  float: left;
-  max-width: 30%; }
-
-.scholarship p.small {
-  font-size: 14px;
-  margin-top: 16px; }
-
-.scholarship .sponsor {
-  float: right;
-  margin-top: 240px;
-  width: 140px; }
-
-.scholarship .sponsor p {
-  text-align: center; }
-
-.scholarship .sponsor a img {
-  width: 137px;
-  height: 137px;
-  display: inline-block;
-  border: none; }
-
 .normal-content ul.numbered {
   list-style: decimal;
   list-style-position: outside;
@@ -371,5 +381,10 @@ h4.tabcolour {
 div.faq h4 {
   font-size: 28px;
   font-weight: 300; }
+
+.bottom p a span:after {
+  font-family: WNI;
+  content: "";
+  margin: 1px 8px; }
 
 /*# sourceMappingURL=wn-cms-styles.css.map */
