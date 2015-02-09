@@ -113,7 +113,6 @@
     a
       &.twitter,
       &.facebook
-        min-width: 78px
         span 
           display: none
       &.facebook:before,
@@ -122,18 +121,16 @@
         font-weight: 300
         font-family: "Ubuntu"
         margin-top: 0
-        margin-right: 0px
-        float: right
+        margin-right: 8px
+        float: left
       &.twitter:before
         content: "Tweet"
-        float: left
       &.facebook:before
         content: "Share"
-        float: left
 
 @media all and (max-width: 630px)
   #share-icons
-    width: 280px
+    //width: 280px
 @media all and (max-width: 500px)
   #share-icons 
     width: 130px
@@ -167,7 +164,8 @@
   padding-top: 28px
   padding-bottom: 8px
   margin: 0
-  box-shadow: #ccc 0px 0px 12px
+  background-color: lighten($color-light-grey, 4%)
+  //box-shadow: #ccc 0px 0px 12px
   .normal-content 
     margin-top: 0
     #sharedcount 
@@ -177,7 +175,7 @@
         margin-right: rem-calc(24px)
     
     #share-icons
-      margin-top: 2px
+      margin-top: 3px
 
 
 
