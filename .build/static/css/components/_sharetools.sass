@@ -100,8 +100,8 @@
   #total
     font-size: $h1-font-size
     font-weight: $bold-font-weight
-    margin-bottom: rem-calc(10px)
-    margin-right: rem-calc(10px)
+    margin-bottom: rem-calc(8px)
+    margin-right: rem-calc(8px)
     float: left
     display: inline-block
     line-height: $default-line-height
@@ -113,6 +113,7 @@
     a
       &.twitter,
       &.facebook
+        min-width: 78px
         span 
           display: none
       &.facebook:before,
@@ -121,12 +122,14 @@
         font-weight: 300
         font-family: "Ubuntu"
         margin-top: 0
-        margin-right: 8px
-        float: left
+        margin-right: 0px
+        float: right
       &.twitter:before
         content: "Tweet"
+        float: left
       &.facebook:before
         content: "Share"
+        float: left
 
 @media all and (max-width: 630px)
   #share-icons
@@ -172,7 +175,9 @@
       margin-right: rem-calc(8px)
       p
         margin-right: rem-calc(24px)
-      
+    
+    #share-icons
+      margin-top: 2px
 
 
 

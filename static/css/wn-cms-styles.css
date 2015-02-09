@@ -204,26 +204,30 @@ h4.tabcolour {
   #sharedcount #total {
     font-size: 3.375rem;
     font-weight: 600;
-    margin-bottom: 0.625rem;
-    margin-right: 0.625rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
     float: left;
     display: inline-block;
     line-height: 1.1; }
 
 @media all and (max-width: 900px) {
-  #share-icons a.twitter span, #share-icons a.facebook span {
-    display: none; }
+  #share-icons a.twitter, #share-icons a.facebook {
+    min-width: 78px; }
+    #share-icons a.twitter span, #share-icons a.facebook span {
+      display: none; }
   #share-icons a.facebook:before, #share-icons a.twitter:before {
     font-size: 16px;
     font-weight: 300;
     font-family: "Ubuntu";
     margin-top: 0;
-    margin-right: 8px;
-    float: left; }
+    margin-right: 0px;
+    float: right; }
   #share-icons a.twitter:before {
-    content: "Tweet"; }
+    content: "Tweet";
+    float: left; }
   #share-icons a.facebook:before {
-    content: "Share"; } }
+    content: "Share";
+    float: left; } }
 @media all and (max-width: 630px) {
   #share-icons {
     width: 280px; } }
@@ -257,6 +261,8 @@ h4.tabcolour {
       margin-right: 0.5rem; }
       #sharetools-long .normal-content #sharedcount p {
         margin-right: 1.5rem; }
+    #sharetools-long .normal-content #share-icons {
+      margin-top: 2px; }
 
 .col-2-1 > div:last-child {
   border-left: 1px solid #959595;
