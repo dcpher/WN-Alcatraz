@@ -1,32 +1,117 @@
+meta.foundation-version 
+  font-family: "/5.5.1/" 
+
 meta.foundation-mq-small 
-  width: 0
+  font-family: "/only screen/"
+  width: 0 
 
-meta.foundation-mq-small-only
-  width: 0
+meta.foundation-mq-small-only 
+  font-family: "/only screen and (max-width: 40em)/"
+  width: 0 
 
-meta.foundation-mq-medium
-  width: 40.063em
+meta.foundation-mq-medium 
+  font-family: "/only screen and (min-width:40.063em)/"
+  width: 40.063em 
 
-meta.foundation-mq-medium-only
-  width: 40.063em
+meta.foundation-mq-medium-only 
+  font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/"
+  width: 40.063em 
 
 meta.foundation-mq-large 
-  width: 64.063em
+  font-family: "/only screen and (min-width:64.063em)/"
+  width: 64.063em 
 
 meta.foundation-mq-large-only 
-  width: 64.063em
+  font-family: "/only screen and (min-width:64.063em) and (max-width:90em)/"
+  width: 64.063em 
 
 meta.foundation-mq-xlarge 
-  width: 90.063em
+  font-family: "/only screen and (min-width:90.063em)/"
+  width: 90.063em 
 
-meta.foundation-mq-xlarge-only
-  width: 90.063em
+meta.foundation-mq-xlarge-only 
+  font-family: "/only screen and (min-width:90.063em) and (max-width:120em)/"
+  width: 90.063em 
 
-meta.foundation-mq-xxlarge
-  width: 120.063em
+meta.foundation-mq-xxlarge 
+  font-family: "/only screen and (min-width:120.063em)/"
+  width: 120.063em 
 
-meta.foundation-data-attribute-namespace
-  font-family: false
+meta.foundation-data-attribute-namespace 
+  font-family: false 
+
+html, body 
+  height: 100% 
+
+*,
+*:before,
+*:after 
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box 
+
+html,
+body 
+  font-size: 100% 
+
+body 
+  background: #fff
+  color: #222222
+  padding: 0
+  margin: 0
+  position: relative
+  cursor: auto 
+
+a:hover 
+  cursor: pointer 
+
+img 
+  max-width: 100%
+  height: auto 
+
+img 
+  -ms-interpolation-mode: bicubic 
+
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object 
+  max-width: none !important 
+
+.left 
+  float: left !important 
+
+.right 
+  float: right !important 
+
+.clearfix:before, .clearfix:after 
+  content: " "
+  display: table 
+.clearfix:after 
+  clear: both 
+
+.hide 
+  display: none 
+
+.invisible 
+  visibility: hidden 
+
+.antialiased 
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale 
+
+img 
+  display: inline-block
+  vertical-align: middle 
+
+textarea 
+  height: auto
+  min-height: 50px 
+
+select 
+  width: 100% 
 
 .row 
   width: 100%
@@ -49,8 +134,8 @@ meta.foundation-data-attribute-namespace
     margin-right: 0 
   .row .row 
     width: auto
-    margin-left: -0.75em
-    margin-right: -0.75em
+    margin-left: -0.5em
+    margin-right: -0.5em
     margin-top: 0
     margin-bottom: 0
     max-width: none 
@@ -71,8 +156,8 @@ meta.foundation-data-attribute-namespace
 
 .column,
 .columns 
-  padding-left: 0.75em
-  padding-right: 0.75em
+  padding-left: 0.5em
+  padding-right: 0.5em
   width: 100%
   float: left 
 
@@ -206,8 +291,8 @@ meta.foundation-data-attribute-namespace
   .column,
   .columns 
     position: relative
-    padding-left: 0.75em
-    padding-right: 0.75em
+    padding-left: 0.5em
+    padding-right: 0.5em
     float: left 
 
   .small-1 
@@ -322,8 +407,8 @@ meta.foundation-data-attribute-namespace
     margin-right: 0 
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns 
-    padding-left: 0.75em
-    padding-right: 0.75em
+    padding-left: 0.5em
+    padding-right: 0.5em
     float: left  
 @media only screen and (min-width: 40.063em) 
   .medium-push-0 
@@ -449,8 +534,8 @@ meta.foundation-data-attribute-namespace
   .column,
   .columns 
     position: relative
-    padding-left: 0.75em
-    padding-right: 0.75em
+    padding-left: 0.5em
+    padding-right: 0.5em
     float: left 
 
   .medium-1 
@@ -565,8 +650,8 @@ meta.foundation-data-attribute-namespace
     margin-right: 0 
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns 
-    padding-left: 0.75em
-    padding-right: 0.75em
+    padding-left: 0.5em
+    padding-right: 0.5em
     float: left 
 
   .push-0 
@@ -812,8 +897,8 @@ meta.foundation-data-attribute-namespace
   .column,
   .columns 
     position: relative
-    padding-left: 0.75em
-    padding-right: 0.75em
+    padding-left: 0.5em
+    padding-right: 0.5em
     float: left 
 
   .large-1 
@@ -928,8 +1013,8 @@ meta.foundation-data-attribute-namespace
     margin-right: 0 
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns 
-    padding-left: 0.75em
-    padding-right: 0.75em
+    padding-left: 0.5em
+    padding-right: 0.5em
     float: left 
 
   .push-0 
