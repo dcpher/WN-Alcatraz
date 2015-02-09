@@ -187,7 +187,7 @@ jQuery(document).ready(function($){
 
 <!-- Content Area Start -->
 <div class="row">  
-  <div class="small-1 medium-2 large-3 columns">
+  <div class="small-12 medium-6 large-3 columns">
     <div class="feature-box" style="background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/jan14/Footprints-Feature-450x440.jpg');">
       <ul class="breadcrumb">
         <li>
@@ -201,7 +201,7 @@ jQuery(document).ready(function($){
       </div>
     </div>
   </div>
-  <div class="small-1 medium-2 large-3 columns">
+  <div class="small-12 medium-6 large-3 columns">
     <div class="feature-box" style="background-image: url('http://cdn.worldnomads.net/Media/Default/HomePageImages/jan14/Community-Feature-450x440.jpg');">
       <ul class="breadcrumb">
         <li>
@@ -216,7 +216,7 @@ jQuery(document).ready(function($){
       </div>
     </div>
   </div>
-  <div class="small-1 medium-2 large-3 columns">
+  <div class="small-12 medium-6 large-3 columns">
     <div class="feature-box" style="background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/jan14/Scholarships-Feature-450x440.jpg');">
       <ul class="breadcrumb">
         <li>
@@ -231,7 +231,7 @@ jQuery(document).ready(function($){
       </div>
     </div>
   </div>  
-  <div class="small-1 medium-2 large-3 columns">
+  <div class="small-12 medium-6 large-3 columns">
     <div class="feature-box" style="background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/jan14/Stories-Feature-450x440.jpg');">
       <ul class="breadcrumb">
         <li>
@@ -247,47 +247,27 @@ jQuery(document).ready(function($){
     </div>
   </div>
 </div>  
-<div style="clear:both"></div>
-<div class="row">  
-  <div class="small-1 medium-2 large-3 columns">
-    <div class="feature-box" style="background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/jan14/Scholarships-Feature-450x440.jpg');">
-    </div>
-  </div>
-  <div class="small-1 medium-2 large-3 columns">
-    <div class="feature-box" style="background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/jan14/Scholarships-Feature-450x440.jpg');">
-    </div>
-  </div>
-  <div class="small-1 medium-2 large-3 columns">
-    <div class="feature-box" style="background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/jan14/Scholarships-Feature-450x440.jpg');">
-    </div>
-  </div>
-  <div class="small-1 medium-2 large-3 columns">
-    <div class="feature-box" style="background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/jan14/Scholarships-Feature-450x440.jpg');">
-    </div>
-  </div>
-</div>
 
-<div class="normal-content">
-  <div class="col-2-1">
-    <div>
-      <ul class="breadcrumb">
-              <li>
-                <a href="/travel-safety">Travel Smart</a>
-              </li>
-      </ul>
-      <a href="/travel-safety"><h3>Travel insights &amp; advice for your trip</h3></a>
-      <p class="intro">Insights, advice, tips and guides to help you survive
+
+<div class="row">  
+  <div class="small-12 medium-6 large-8 columns">
+    <ul class="breadcrumb">
+      <li>
+        <a href="/travel-safety">Travel Smart</a>
+      </li>
+    </ul>
+    <a href="/travel-safety"><h3>Travel insights &amp; advice for your trip</h3></a>
+    <p class="intro">Insights, advice, tips and guides to help you survive
             the nightlife, avoid scams, make your money last longer and help you
             avoid trouble in every corner of the world.</p>
-    
-      <div class="searchform">
-        <!-- start safety country picker -->   
-        <form class="answers form-input-button-pair">
-          <input class="autocomplete" placeholder="Enter Country/Region Name" type="text"> <button class="button-primary">Get travel tips</button>
-        </form>
-        <script src="//www.worldnomads.com/Scripts/jquery/autocomplete/jquery.autocomplete.js"></script>
-        <script>
-            var countries = [
+    <div class="searchform">
+      <!-- start safety country picker -->   
+      <form class="answers form-input-button-pair">
+        <input class="autocomplete" placeholder="Enter Country/Region Name" type="text"> <button class="button-primary">Get travel tips</button>
+      </form>
+      <script src="//www.worldnomads.com/Scripts/jquery/autocomplete/jquery.autocomplete.js"></script>
+      <script>
+          var countries = [
                 { 'id': 'http://www.worldnomads.com/travel-safety/worldwide', 'name': 'Worldwide' },
                 { 'id': 'http://www.worldnomads.com/travel-safety/afghanistan', 'name': 'Afghanistan' },
                 { 'id': 'http://www.worldnomads.com/travel-safety/aland-islands', 'name': 'Aland Islands' },
@@ -569,10 +549,10 @@ jQuery(document).ready(function($){
                 .on("click", function(e) {
                 e.preventDefault();
             });
-        </script>
-      </div><!-- end safety country picker -->
-    </div>
-    
+      </script>
+    </div><!-- end safety country picker -->
+  </div>
+  <div class="small-12 medium-6 large-4 columns">
     <div class="sideadvert" style="background-image: url('//cdn.worldnomads.net/Media/Default/HomePageImages/jan14/ThaiGuide-Feature-450x440.jpg')">
       <ul class="breadcrumb">
         <li>
@@ -582,10 +562,9 @@ jQuery(document).ready(function($){
           <a href="/guides/thailand-survival-guide">Thailand</a>
         </li>
       </ul>
-        <a href="/guides/thailand-survival-guide"><h4>FREE Thailand survival guide</h4></a>
-        <div class="bottom">
-          <a class="cta-button-primary grey" href="/guides/thailand-survival-guide">Download the guide</a>
-        </div>
+      <a href="/guides/thailand-survival-guide"><h4>FREE Thailand survival guide</h4></a>
+      <div class="bottom">
+        <a class="cta-button-primary grey" href="/guides/thailand-survival-guide">Download the guide</a>
       </div>
     </div>
   </div>
