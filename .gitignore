@@ -8,3 +8,20 @@
 .build/static/css/wn-cms-styles.css.map
 
 static/css/wn-cms-styles.css.map
+<<<<<<< HEAD
+=======
+
+static/css/wn-cms-styles.sass
+
+*.map
+
+static/css/wn-cms-styles.css.map
+
+.build/static/css/wn-cms-styles.css.map
+
+.build/static/css/wn-cms-styles.css
+>>>>>>> FETCH_HEAD
+
+.build/static/css/wn-cms-styles.css
+
+static/css/wn-cms-styles.css
