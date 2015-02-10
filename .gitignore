@@ -29,3 +29,7 @@ static/css/wn-cms-styles.css
 .build/change-lives.html
 
 .build/static/css/components/_structure.sass
+
+.build/static/css/components/_structure.sass
+
+static/css/components/_structure.sass
