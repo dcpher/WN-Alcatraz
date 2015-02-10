@@ -2,13 +2,58 @@
 @import functions 
 
 #wnqqcalculator 
-  
+  padding: 16px
+  // white
+  &.white 
+    background-color: rgba(226, 226, 226, 0.5)
+    h1, h5
+      color: $color-dark-grey
+    .qqc-container 
+      input[type='text'], input[type='number']
+        border: $color-dark-grey 1px solid
+  //All
+  .qqc-container 
+    width: 100%
+    max-width: 100%
+    min-width: 100%
   #qqc
-    margin-bottom: 20px
-    
-    .qqc-container
-      .departure-date 
-        width: 100%
+    margin: 0
+    h1
+      display: none
+      line-height: 0
+      margin-bottom: 0
+      padding: 0
+    h5
+      font-size: 14px
+      margin-top: 4px
+      margin-bottom: 2px
+    .continue
+      padding: 2px 15px 0
+      border: 1px solid rgba(0,0,0,0.2)
+      line-height: 32px
+      font-size: 18px
+    .qqc-background 
+      background: none
+      padding: 0
+      margin-bottom: 0
+    .destinations-wrapper 
+      margin-bottom: 6px
+    .input-group
+      margin: 3px 0 0
+      .icon
+        &:after
+          font-size: 16px
+          left: 8px
+          bottom: -3px
+      &.destination, &.country-of-residence, &.traveller-age, &.departure-date, &.return-date, &.province
+        input
+          padding-left: 40px
+          font-size: 14px
+          line-height: 20px 
 
-
-    
+@media all and (max-width: 500px) 
+  #home
+    .right 
+      float: left
+    .left
+      float: right
