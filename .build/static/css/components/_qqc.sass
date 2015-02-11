@@ -3,11 +3,52 @@
 
 #wnqqcalculator 
   padding: 16px
+  padding-bottom: 50px
+  .trustedby
+    width: 100%
+    display: block
+    padding-top: 8px
+    p, img
+      margin-right: 3%
+      float: left
+    p 
+      color: $color-dark-grey
+      font-size: 12px
+      margin-top: 12px
+    img
+      width: auto
+      max-width: 80px
+      margin-top: 10px
+      &.natgeo
+        padding-top: 10px
+      &.vt
+        padding-top: 6px
+      @media all and (max-width: 1110px)
+        &.natgeo
+          display: none
+      @media all and (max-width: 775px)
+        &.intrep
+          display: none
+      @media all and (max-width: 640px)
+        &.intrep, &.natgeo
+          display: block
+      @media all and (max-width: 565px)
+        &.natgeo
+          display: none
+      @media all and (max-width: 380px)
+        &.rg
+          display: none
+
+
   // white
   &.white 
-    background-color: rgba(226, 226, 226, 0.5)
+    background-color: rgba(226, 226, 226, 0.8)
     h1, h5
       color: $color-dark-grey
+    h1 
+      line-height: 40px
+      font-size: 40px
+      margin-bottom: 0
     .qqc-container 
       input[type='text'], input[type='number']
         border: $color-dark-grey 1px solid
@@ -16,6 +57,11 @@
     width: 100%
     max-width: 100%
     min-width: 100%
+    .legacy-travellers
+      label
+        line-height: 36px
+  #wn-insurance-quote-editor, .qqc-container-wrapper, .traveller-inputs-wrapper 
+    margin-bottom: 0
   #qqc
     margin: 0
     h1
@@ -50,10 +96,13 @@
           padding-left: 40px
           font-size: 14px
           line-height: 20px 
+    .province
+      h5 
+        min-height: 32px
+      @media all and (max-width: 660px)
+        h5
+          min-height: 16px
 
-@media all and (max-width: 500px) 
-  #home
-    .right 
-      float: left
-    .left
-      float: right
+  @media all and (max-width: 660px)
+    .traveller-inputs-wrapper
+      margin-bottom: 16px

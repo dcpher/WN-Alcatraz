@@ -33,3 +33,5 @@ static/css/wn-cms-styles.css
 .build/static/css/components/_structure.sass
 
 static/css/components/_structure.sass
+
+.build/index.html

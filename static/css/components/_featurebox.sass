@@ -6,7 +6,7 @@
   position: relative
   background-repeat: no-repeat
   background-color: #f5f5f5
-  margin-bottom: 0
+  margin-bottom: 20px
   &:hover
     background-color: rgba(0,0,0,0.3)
     z-index: 900
@@ -32,6 +32,8 @@
     opacity: 0.9
     filter: alpha(opacity=90)
     position: absolute
+    @media all and (max-width: 640px) 
+      min-height: 10px
     .feature-link-title
       font-size: 12px
       color: #ffffff
@@ -63,7 +65,6 @@
     &.yellow
       background-color: $color-yellow
   
-@media all and (max-width: 900px)
 
 
 
