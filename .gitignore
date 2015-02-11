@@ -28,3 +28,9 @@ static/css/wn-cms-styles.css
 
 
 
+
+plugins/default.pyc
+
+plugins/__init__.pyc
+
+.build/sitemap.xml
