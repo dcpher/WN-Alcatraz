@@ -8,6 +8,7 @@ ul.breadcrumb
   clear: both
   float: left
   width: 100%
+  z-index: 500
 
   li 
     list-style: none
@@ -21,6 +22,8 @@ ul.breadcrumb
     line-height: $default-line-height
     float: left
     margin-bottom: 8px
+    &:hover
+      text-decoration: underline
     
   li:after  
     font-family: WNI
