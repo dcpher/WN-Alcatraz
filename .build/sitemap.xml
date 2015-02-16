@@ -16,7 +16,17 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/index.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/story-content.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/travel-insurance-au-index.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>

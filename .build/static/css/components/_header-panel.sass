@@ -3,24 +3,24 @@
 // Article Header Styles 
 
 #article-header
-  .headercontent 
-    float: left
-    max-width: 30%
-
-#article-header 
   p.small 
     font-size: 14px
     margin-top: 16px
+    margin-bottom: 8px
 
-#article-header 
   .sponsor 
     float: right
     margin-top: 240px
     width: 140px
 
-#article-header 
-  .sponsor p 
-    text-align: center
+  .sponsor 
+    p 
+      text-align: center
+        
+  &.light
+    color: $color-inverse
+  &.dark
+    color: $color-dark-grey
 
 #article-header
   .sponsor a img 
@@ -43,3 +43,4 @@
       min-height: 550px
       h1
         margin-top: 60px
+        

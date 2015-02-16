@@ -1,0 +1,44 @@
+//benefits-bar
+
+#benefits-bar
+  padding: rem-calc(24) 0 rem-calc(16) 0
+  
+  &.blue
+    background-color: $color-blue
+    
+  &.light
+    color: $color-inverse
+  &.dark
+    color: $color-dark-grey
+  li
+    line-height: rem-calc(20)
+    &.medical-icon,
+    &.evacuation-icon,
+    &.cancellation-icon,
+    &.lost-stolen-icon,
+    &.interruption-icon,
+    &.return-icon
+      padding-left: rem-calc(64)
+      padding-right: rem-calc(16)
+      background-position: 5px -10px
+      background-repeat: no-repeat
+      height: 64px
+      
+      
+  .medical-icon
+    background-image: url(/static/Media/Default/icons/medical-icon.png) 
+      
+  .evacuation-icon
+    background-image: url(/static/Media/Default/icons/evacuation-icon.png)
+      
+  .cancellation-icon
+    background-image: url(/static/Media/Default/icons/cancellation-icon.png)
+      
+  .lost-stolen-icon
+    background-image: url(/static/Media/Default/icons/lost-stolen-icon.png)
+      
+  .interruption-icon
+    background-image: url(/static/Media/Default/icons/interruption-icon.png)
+      
+  .return-icon
+    background-image: url(/static/Media/Default/icons/return-icon.png)
