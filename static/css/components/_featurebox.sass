@@ -1,5 +1,5 @@
 //Feature Box
-.feature-box, .small-photo-box
+.feature-box, .small-feature-box, .feature-box-right-panel
   background-position: left top
   background-size: cover
   min-height: 460px
@@ -66,7 +66,7 @@
     &.yellow
       background-color: $color-yellow
       
-.small-photo-box
+.small-feature-box
   min-height: 160px
   .bottom
     min-height: 45px
@@ -77,6 +77,66 @@
       padding: 0px
       margin: 0
   
+      
+// Feature Box with Right Panel      
+.feature-box-right-panel
+  min-height: rem-calc(260px)
+  background-position: center top
+  a
+    h4
+      width: rem-calc(250px)
+    
+  .right
+    position: absolute
+    right: 0px
+    top: 0px
+    width: rem-calc(280px)
+    min-height: inherit
+    color: #ffffff
+    margin: 0
+    padding: rem-calc(20)
+    p
+      padding: 0 0 8px 0
+      margin: 0
+      
+    // insert quote marks
+    .feature-quote
+      background-image: url(/static/Media/Default/icons/quote-marks.svg)
+      background-repeat: no-repeat
+      height: 16px
+      width: 100%
+      display: block
+      background-size: 44px 16px
+      margin-bottom: rem-calc(8)
+    
+    &.orange
+      background-color: rgba($color-orange, 0.85)
+    &.teal
+      background-color: rgba($color-teal, 0.85)
+    &.purple
+      background-color: rgba($color-purple, 0.85)
+    &.blue
+      background-color: rgba($color-blue, 0.85)
+    &.red
+      background-color: rgba($color-mid-grey, 0.85)
+    &.yellow
+      background-color: rgba($color-yellow, 0.85)
+        
+  @media all and (max-width: 860px) 
+    min-height: 320px
+
+    a
+      h4
+        width: 100%
+
+    .right
+      position: absolute
+      top: auto
+      bottom: 0px
+      width: 100%
+      min-height: initial
+      color: #ffffff
+      margin: 0
 
 
 
