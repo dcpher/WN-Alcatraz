@@ -21,6 +21,16 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/nomadic-matt.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/spanish-homepage.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/story-content.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
