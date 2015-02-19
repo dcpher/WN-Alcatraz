@@ -4,10 +4,16 @@
 #article-content
   margin-top: 24px
   .right-column
-    margin-top: 10px
+    margin-top: 0px
+   
+  .right-column
+    .content-box:first-child
+      padding-top: 0px
     
   .section
     margin-bottom: rem-calc(64)
+
+
 
 // Mobile Only
 @media all and (min-width: 640px)
@@ -41,11 +47,18 @@
   margin-bottom: 0
 .footer-background 
   clear: both
+    
+// default images are set to 100% need to have a fix to allow for default auto sizing
+div > img
+  &.auto-size-img
+    width: auto
+    margin-bottom: rem-calc(20)
 
     
 // Color Boxes
 
 div
+  // solid colours
   &.orange
     background-color: $color-orange
   &.teal
@@ -63,3 +76,31 @@ div
   &.light-grey
     background-color: $color-light-grey
   
+  // pattern backgrounds
+  &.orange-pattern, &.teal-pattern, &.purple-pattern, &.blue-pattern, &.red-pattern, &.yellow-pattern, &.grey-pattern
+    color: $color-inverse
+    background-position: center
+
+    
+  &.orange-pattern
+    background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_orange.jpg)
+    
+  &.teal-pattern
+    background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_teal.jpg)
+    
+  &.purple-pattern
+    background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_purple.jpg)
+    
+  &.blue-pattern
+    background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_blue.jpg)
+    
+  &.red-pattern
+    background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_red.jpg)
+    
+  &.yellow-pattern
+    background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_yellow.jpg)
+    
+  &.grey-pattern  
+    background-image: url(https://www.worldnomads.com/Content/styles/i/wn/backgrounds/hero_bg_color_grey.jpg)
+
+    

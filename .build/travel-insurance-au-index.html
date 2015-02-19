@@ -202,18 +202,38 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
 
 <div class="hero-content-panel light" id="article-header">
   <div class="row">
+    
+    <!--  TITLE  -->
     <div class="large-4 medium-5 small-12 column">
       <ul class="breadcrumb">
-      <li>
-        <a href="/">World Nomads</a>
-      </li>
-      <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-        <a href="/"><span itemprop="title">Travel Insurance Australia</span></a>
-      </li>
-    </ul>
-    <h1>Travel Insurance for Australians by World Nomads</h1>
-    <p>Travel Insurance for Residents of Australia</p>
+        <li>
+          <a href="#">World Nomads</a>
+        </li>
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+          <a href="#"><span itemprop="title">Travel Insurance Australia</span></a>
+        </li>
+      </ul>
+      <h1>Travel Insurance for Australians by World Nomads</h1>
+      <p>Travel Insurance for Residents of Australia</p>
     </div>
+
+    <!--  QQC  -->
+    <div class="small-12 medium-7 large-6 columns right">
+      <div id="wnqqcalculator" class="white">
+        <h1>Get your travel insurance</h1>
+        <script async='' src='//cdn.worldnomads.net/scripts/custom/wng.cachedGetPartnerWidgetResponse.js?loadWithPanelExpanded=true&excludeStyles=true&extractCampaignCodeFromUrl=true'></script>
+        <div id='wn-insurance-quote-editor'></div>
+        <div class="trustedby">
+          <p>Trusted by:</p>
+          <img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/lonley-planet-logo-dark.png" alt="Lonely Planet" class="lp" />
+          <img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/nat-geo-logo-dark.png" alt="Nat Geo Adventure"  class="natgeo" />
+          <img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/rough-guide-logo-dark.png" alt="Rough Guides" class="rg" />
+          <img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/intrepid-logo-dark.png" alt="Intrepid" class="intrep" />
+          <img src="http://www.worldnomads.com/Media/Default/TravelInsuranceImages/PartnerLogos/v-tourist-logo-dark.png" alt="Virtual Tourist" class="vt" />
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -268,7 +288,7 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
   <div class="large-8 medium-8 small-12 columns">
     
     <!--  What we cover Section  -->
-    <div class="section">
+    <div class="section" id="what-we-cover">
       <h2>What we cover</h2>
 
       <p class="highlight">World Nomads offers two travel insurance plans for Australian independent and adventurous travellers.</p>
@@ -319,37 +339,39 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
     </div>
 
     <!--  Cover for your Adventure Section  -->
-    <div class="section">
+    <div class="section" id="cover-your-adventure">
       
       <h2>Cover for your Adventure</h2>
 
       <p class="highlight">World Nomads travel insurance covers more than 200 activities and sports, things that you love to do when you travel.</p>
       
+<!--
       <div class="row blue">
-        <div class="columns"> Activity Form </div>
+        <div class="columns"> Activity Form to go here</div>
       </div>
+-->
       
       <div class="row">
         <div class="large-3 medium-6 small-6 columns">
-          <div class="small-feature-box">
+          <div class="small-feature-box" style="background-image: url('/static/Media/Default/hiking-thumb.jpg');">
             <div class="bottom blue"><p>Hiking up to 6000m</p></div>
           </div>
         </div>
 
         <div class="large-3 medium-6 small-6 columns">
-          <div class="small-feature-box">
+          <div class="small-feature-box" style="background-image: url('/static/Media/Default/diving-thumb.jpg');">
             <div class="bottom blue"><p>Scuba Diving to 40m</p></div>
           </div>
         </div>
 
         <div class="large-3 medium-6 small-6 columns">
-          <div class="small-feature-box">
+          <div class="small-feature-box" style="background-image: url('/static/Media/Default/snow-thumb.jpg');">
             <div class="bottom blue"><p><a href="#">Skiing &amp; Boarding cover</a></p></div>
           </div>
         </div>
 
         <div class="large-3 medium-6 small-6 columns">
-          <div class="small-feature-box">
+          <div class="small-feature-box"style="background-image: url('/static/Media/Default/canoe-thumb.jpg');">
             <div class="bottom blue"><p>Kayaking &amp; white water rafting cover</p></div>
           </div>
         </div>
@@ -361,11 +383,12 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
     
     
     <!-- When something goes wrong Section -->
-    <div class="section">
+    <div class="section" id="when-things-go-wrong">
       
       <h2>When something goes wrong</h2>
 
-      <p class="highlight">Purchasing travel insurance can be confusing at times, but the best way to understand why its important is to see how it supports you when something does go wrong. The following examples are what we see every day at World Nomads.</p>
+      <p class="highlight">Purchasing travel insurance can be confusing at times, but the best way to understand why its important is to see how it supports you when something does go wrong.</p>
+      <p>The following examples are what we see every day at World Nomads.</p>
       
       <div class="row">
         <div class="large-6 small-12 columns">
@@ -373,8 +396,8 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
             <ul>
               <li><h5>Illness or Injury</h5></li>
               <li><a href="#">What to do if you need to return home early because your travel companion or someone important at home being sick or injured.</a></li>
-              <li><a href="#">What to do if you can’t travel due to illness or injury.</a></li>
-              <li><a href="#">What to do if you’re hurt in an accident.</a></li>
+              <li><a href="#">What to do if you can't travel due to illness or injury.</a></li>
+              <li><a href="#">What to do if you're hurt in an accident.</a></li>
               <li><a href="#">What to do if you fall suddenly ill.</a></li>
             </ul>
           </div>
@@ -418,7 +441,7 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
     </div>
     
     <!--  Travel Insurance Claims Section  -->
-    <div class="section">
+    <div class="section" id="claims">
           <h2>Travel Insurance Claims</h2>
           <p class="highlight">Over the past 10 plus years, we have seen just about every type of travel insurance claim there is.</p> 
           <p>Our claims staff and international network of medical and assistance providers have the depth of experience to ensure should you get into trouble, we’ll be there, every step of the way.</p>
@@ -462,50 +485,69 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
     </div>
     
     <!--  Gear Cover Section  -->
-    <div class="section">
+    <div class="section" id="gear-cover">
       <h2>Gear cover for the digital nomad</h2>
       <p class="highlight">World Nomads travel insurance doesn't just cover your adventure activities, but as digital nomads ourselves, we know how important it is to have cover for your tech gear as well.</p>
       <p>We cover theft or accidental damage of your gear and you can also upgrade your cover to increase the individual item limit to $3,000 per item for such things as;</p>
       
       <div class="row">
-        <div class="small-12 large-12 columns light-grey">
+        <div class="small-12 large-12 columns">
+          <div class="content-box centered light-grey">
           <h3>Camera cover</h3>
           <p>We have cover for all your photography gear:</p>
 
           <div class="row">
-            <div class="large-4 small-12 columns">
-              
+            <div class="large-4 medium-4 small-12 columns">
+              <img alt="beginner" src="/static/Media/Default/gear-beginner.png" />
               <h5>Beginner</h5>
               <p>Our Standard plan covers $500 which is suitable for a pocket point-and-shoot.</p>
             </div>
-            <div class="large-4 small-12 columns">
+            <div class="large-4 medium-4 small-12 columns">
+              <img alt="enthusiast" src="/static/Media/Default/gear-enthusiast.png" />
               <h5>Enthusiast</h5>
               <p>Our Explorer plan covers $2,000 for all of your combined cameras and lenses which is suitable for an entry level camera. </p>
             </div>  
-            <div class="large-4 small-12 columns">
-              <h5>Semi-Pro</h5>
-              <p>You can increase cover for your combined cameras and lenses up to $6,000 with a per item limit of $3,000 by adding these to your policy.</p>
+            <div class="large-4 medium-4 small-12 columns">
+              
+                <img alt="enthusiast" src="/static/Media/Default/gear-semi-pro.png" />
+                <h5>Semi-Pro</h5>
+                <p>You can increase cover for your combined cameras and lenses up to $6,000 with a per item limit of $3,000 by adding these to your policy.</p>
             </div>
+          </div>
           </div>
         </div>
       </div>
       
       <div class="row">
-        <div class="small-12 large-6 columns light-grey">
+        <div class="small-12 medium-6 large-6 columns">
+          <div class="content-box centered light-grey">
+          <img alt="iPad & iPhone" src="/static/Media/Default/gear-iphone-ipad.png" />
           <h3>iPhone &amp; iPad cover</h3>
           <p>Our Standard Plan covers up to $2,000 with a per item limit of $500. our Explorer Plan covers up to $10,000 with a per item limit of $2,000. </p>
+          </div>
         </div>
-        <div class="small-12 large-6 columns light-grey">
-          <h3>Laptop cover</h3>
-          <p>Our Standard Plan covers up to $2,000 with a per item limit of $500. our Explorer Plan covers up to $10,000 with a per item limit of $2,000. </p>
+        <div class="small-12 medium-6 large-6 columns">
+          <div class="content-box centered light-grey">
+            <img alt="laptop" src="/static/Media/Default/gear-laptop.png" />
+            <h3>Laptop cover</h3>
+            <p>Our Standard Plan covers up to $2,000 with a per item limit of $500. our Explorer Plan covers up to $10,000 with a per item limit of $2,000. </p>
+          </div>
         </div>
       </div>  
       
       <div class="row">
-        <div class="small-12 large-12 columns light-grey">
-          image
-          <h3>Passports, travel documents &amp; credit cards</h3>
-          <p>We also reimburse the cost to replace your passport,credit cards and travel documents (eg. visas, travel passes) if they're lost, stolen or accidently damaged.</p>
+        <div class="small-12 large-12 columns">
+          <div class="content-box light-grey">
+            <div class="row">
+              <div class="small-4 large-3 columns">
+               <img alt="travel docs" src="/static/Media/Default/gear-travel-docs.png" />
+              </div>
+              <div class="small-8 large-9 columns">
+                <h3>Passports, travel documents &amp; credit cards</h3>
+                <p>We also reimburse the cost to replace your passport,credit cards and travel documents (eg. visas, travel passes) if they're lost, stolen or accidently damaged.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -519,57 +561,121 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
 
   <div class="large-3 medium-4 small-12 columns">
     <div class="right-column">
-      <h4 class="tabcolour">Your guide to World Nomad Travel Insurance:</h4>
+      <div class="content-box">
+        <h4 class="">Your guide to World Nomad Travel Insurance:</h4>
+
+        <ul class="quicklinks">
+          <li><a href="#">What we cover</a></li>
+          <li><a href="#">Cover for your Adventure</a></li>
+          <li><a href="#">When something goes wrong</a></li>
+          <li><a href="#">Travel Insurance Claims</a></li>
+          <li><a href="#">Cover your digital gear</a></li>
+          <li><a href="#">World Nomads Travel App</a></li>
+        </ul>
+      </div>
        
+      <div class="content-box teal-pattern">
+        <h4>Travel Insurance Special Offers</h4>
+        <p>Subscribe now for special offers and deals on World Nomads Travel Insurance</p>
+        <div class="button-primary">Sign up for offers</div>
+      </div>
+      
+      <div class="content-box">
+        <h4>Policy Wording</h4>
+        <p>Remember to read the <a href="">Product Disclosure Statement</a> before you buy travel insurance</p>
+      </div>
+      
+      
+      <div class="content-box">
+        <h4>Travel Insurance Help Desk</h4>
+        <p>Top 10 most frequently asked questions about our travel insurance.</p>
+        <ul>
+          <li><a href="#">What do you mean by my Country of Residence?</a></li>
+          <li><a href="#">Is the price quoted for everyone or per person?</a></li>
+          <li><a href="#">I&#39;m not sure which countries I&#39;ll be going to. Am I still covered if I visit other countries than the ones I list on my policy?</a></li>
+          <li><a href="#">What countries do you cover?</a></li>
+          <li><a href="#">Can I buy a policy while I am already overseas?</a></li>
+          <li><a href="#">Where do I enter a promotion code?</a></li>
+          <li><a href="#">I want to ride a motorbike. Am I covered?</a></li>
+          <li><a href="#">Are there any waiting periods?</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <p>If you have a question?</p>
+        <div class="button-primary">Just ask us</div>
+      </div>
 
-      <h4 class="tabcolour">Related Stories</h4>
-
-      <ul class="related">
-        <!--1st item -->
-
-        <li>
-          <a href=
-          "http://journals.worldnomads.com/responsible-travel/story/81053/Thailand/Why-Elephant-Riding-Should-Be-Removed-from-Your-Bucket-List&quot;">
-          <img src="http://www.worldnomads.com//Media/Default/Stories-Images/Thai-image.jpg"></a>
-          <a href=
-          "http://journals.worldnomads.com/responsible-travel/story/81053/Thailand/Why-Elephant-Riding-Should-Be-Removed-from-Your-Bucket-List">
-          Why Elephant Riding Should be Removed from your Bucket List</a> <label><a href=
-          "http://journals.worldnomads.com/responsible-travel/">by Responsible Travel</a></label>
-        </li><!--2nd item -->
-
-        <li>
-          <a href=
-          "http://journals.worldnomads.com/travel-tips/story/109254/Worldwide/Around-the-World-in-Ten-Hangovers">
-          <img src="http://www.worldnomads.com/Media/Default/Stories-Images/tripe.jpg"></a> <a href=
-          "http://journals.worldnomads.com/travel-tips/story/109254/Worldwide/Around-the-World-in-Ten-Hangovers">
-          Around the World in Ten Hangovers</a> <label><a href=
-          "http://journals.worldnomads.com/travel-tips/">by A Nomad Knows</a></label>
-        </li><!--3rd item -->
-
-        <li>
-          <a href=
-          "http://journals.worldnomads.com/workandholiday/story/78488/France/Working-Holidays-in-France-Embracing-the-Work-Life-Balance">
-          <img src="http://www.worldnomads.com/Media/Default/Stories-Images/girl-france.jpg"></a>
-          <a href=
-          "http://journals.worldnomads.com/workandholiday/story/78488/France/Working-Holidays-in-France-Embracing-the-Work-Life-Balance">
-          Working Holidays in France: Embracing the Work-Life Balance</a> <label><a href=
-          "http://journals.worldnomads.com/workandholiday/">by Working Holiday</a></label>
-        </li><!--4th item -->
-
-        <li>
-          <a href=
-          "http://journals.worldnomads.com/extraordinaryexperiences/story/111141/Greenland/Greenland-Hiking-on-Top-of-the-World">
-          <img src="http://www.worldnomads.com/Media/Default/Stories-Images/greenland.jpg"></a>
-          <a href=
-          "http://journals.worldnomads.com/extraordinaryexperiences/story/111141/Greenland/Greenland-Hiking-on-Top-of-the-World">
-          Greenland: Hiking to the Top of the World</a> <label><a href=
-          "http://journals.worldnomads.com/extraordinaryexperiences#axzz3C1FL4feP">by Extraordinary
-          Experiences</a></label>
-        </li>
-      </ul>
+      <div class="content-box blue-pattern">
+        <h4>Manage your policy</h4>
+        <p>if you&#39;re already a World Nomads customer, then you can manage your policy with ease through your members console. You can sign in to;</p>
+        <ul>
+          <li>Make a claim</li>
+          <li>Change your dates</li>
+          <li>Extend your policy</li>
+          <li>View your policy</li>
+        </ul>
+        
+        <div class="button-primary">Sign in</div>
+      </div>
+      
+      <div class="content-box">
+        <h4>In an Emergency</h4>
+        <p>If you’re on the road and something happens, no matter how insignificant you think it is, our 24 hour emergency team is there for you.</p>
+        <p>Need our help? <a href="#">Contact us.</a></p>
+        
+        <h5>How to get in touch.</h5>
+        <p>From experience we understand that the telephone isn't always suitable for every situation. Here are other ways you can get in touch if you need help.</p>
+        
+        <ul>
+          <li>Email</li>
+          <li>Twitter</li>
+          <li>Facebook</li>
+          <li>Call</li>
+        </ul>
+      </div>
+      
+      <div class="content-box">
+        <h4>Travellers Packing List</h4>
+        <p>Ready to head off on your next adventure? <a href="#">Download our free packing list</a> to help you get organised and not forget anything essential.</p>
+      </div>
+      
     </div>
   </div>
 </div>
+  
+
+<!--  Trusted Partners Section  -->
+
+<div class="row normal-content section" id="trusted-by">
+    
+  <div class="large-12 columns">
+    <h2>Trusted by:</h2>
+    <p class="highlight">After 10 years, we’re used not just by millions of travellers, but we’re also loved by brands like Lonely Planet, Rough Guides, National Geographic Channel, Intrepid Travel, Nomadic Matt, TravelFish and many more. </p>
+  </div>
+
+  <div class="small-12 medium-4 large-4 columns">
+    <img alt="lonely planet logo" src="/static/Media/Default/logos/lonley-planet-blue.png" class="auto-size-img" />
+    <h4>Lonely Planet</h4>
+    <p>Lonely Planet is renowned for its approach and commitment to providing the best information for travellers. They chose World Nomads as their global travel insurance because of our aligned travel philosophy and commitment to digital innovation.</p>
+
+  </div>
+
+  <div class="small-12 medium-4 large-4 columns">
+    <img alt="rough guides logo" src="/static/Media/Default/logos/rough-guides.png" class="auto-size-img" />
+    <h4>Rough Guides</h4>
+    <p>Rough Guides is a leading publisher of travel and reference information, respected for their up-to-date content and informed contemporary writing. They chose World Nomads because we are able to offer cover to people from more than 150 different countries.</p>
+
+  </div>
+
+  <div class="small-12 medium-4 large-4 columns">
+    <img alt="intepid logo" src="/static/Media/Default/logos/intrepid.png" class="auto-size-img" />
+    <h4>Intrepid Travel</h4>
+    <p>Intrepid Travel is one of the largest tour companies in the world. They chose World Nomads not just because we share the same Adventure ethos, but because both companies have a commitment to community development and sustainability.</p>
+  </div>
+
+
+</div>
+  
+  
   
 
 <!-- Main Content Area End -->
