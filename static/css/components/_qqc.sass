@@ -4,6 +4,25 @@
 #wnqqcalculator 
   padding: 16px
   padding-bottom: 50px
+  .input-group
+  @media all and (min-width: 935px)
+    .tooltip
+      bottom: -90px
+  @media all and (max-width: 935px)
+    .tooltip
+      bottom: -114px
+  @media all and (max-width: 720px)
+    .tooltip
+      bottom: -138px
+  @media all and (max-width: 650px)
+    .tooltip
+      bottom: -162px
+  @media all and (max-width: 641px)
+    .tooltip
+      bottom: -90px
+  @media all and (max-width: 552px)
+    .tooltip
+      bottom: -115px
   .trustedby
     width: 100%
     display: block
@@ -35,10 +54,12 @@
       @media all and (max-width: 565px)
         &.natgeo
           display: none
+      @media all and (max-width: 460px)
+        &.vt
+          display: none
       @media all and (max-width: 445px)
         &.rg
           display: none
-
   // white
   &.white 
     background-color: rgba($color-light-grey, 0.8)
