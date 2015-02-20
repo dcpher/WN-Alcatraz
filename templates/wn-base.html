@@ -192,7 +192,13 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
             </div>
 
             <div class="zone zone-content">
+              
+              
+              
+              
                 <!-- CONTENT START -->
+              
+              
               
               {% block content %}
                   Main content
@@ -200,10 +206,20 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
 
               {% block scripts %}
                   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                  <script src="{% static '/js/main.js' %}"></script>
+                  <script src="{% static '/js/foundation/foundation.js' %}"></script>
+                  <script src="{% static '/js/foundation/foundation.equalizer.js' %}"></script>
+              
+                  <script>
+                    $(document).foundation();
+                  </script>
               {% endblock scripts%}
               
+              
+              
               <!-- CONTENT END -->
+              
+              
+              
             </div>
 
             <div class="zone zone-footer">

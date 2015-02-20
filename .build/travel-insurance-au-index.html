@@ -192,7 +192,13 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
             </div>
 
             <div class="zone zone-content">
+              
+              
+              
+              
                 <!-- CONTENT START -->
+              
+              
               
               
 
@@ -273,7 +279,7 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
 
 <div class="light blue" id="benefits-bar">
   <div class="row">
-    <ul class="large-block-grid-6 medium-block-grid-3 small-block-grid-3">
+    <ul class="large-block-grid-6 medium-block-grid-3 small-block-grid-2">
       <li class="medical-icon">24/7 Medical Assistance</li>
       <li class="evacuation-icon">Emergency Evacuation</li>
       <li class="cancellation-icon">Trip Cancellation</li>
@@ -351,28 +357,28 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
       </div>
 -->
       
-      <div class="row">
+      <div class="row" data-equalizer>
         <div class="large-3 medium-6 small-6 columns">
           <div class="small-feature-box" style="background-image: url('/static/Media/Default/hiking-thumb.jpg');">
-            <div class="bottom blue"><p>Hiking up to 6000m</p></div>
+            <div class="bottom blue" data-equalizer-watch><p>Hiking up to 6000m</p></div>
           </div>
         </div>
 
         <div class="large-3 medium-6 small-6 columns">
           <div class="small-feature-box" style="background-image: url('/static/Media/Default/diving-thumb.jpg');">
-            <div class="bottom blue"><p>Scuba Diving to 40m</p></div>
+            <div class="bottom blue" data-equalizer-watch><p>Scuba Diving to 40m</p></div>
           </div>
         </div>
 
         <div class="large-3 medium-6 small-6 columns">
           <div class="small-feature-box" style="background-image: url('/static/Media/Default/snow-thumb.jpg');">
-            <div class="bottom blue"><p><a href="#">Skiing &amp; Boarding cover</a></p></div>
+            <div class="bottom blue" data-equalizer-watch><p><a href="#">Skiing &amp; Boarding cover</a></p></div>
           </div>
         </div>
 
         <div class="large-3 medium-6 small-6 columns">
           <div class="small-feature-box"style="background-image: url('/static/Media/Default/canoe-thumb.jpg');">
-            <div class="bottom blue"><p>Kayaking &amp; white water rafting cover</p></div>
+            <div class="bottom blue" data-equalizer-watch><p>Kayaking &amp; white water rafting cover</p></div>
           </div>
         </div>
         
@@ -497,19 +503,18 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
           <p>We have cover for all your photography gear:</p>
 
           <div class="row">
-            <div class="large-4 medium-4 small-12 columns">
+            <div class="large-4 medium-12 small-12 columns">
               <img alt="beginner" src="/static/Media/Default/gear-beginner.png" />
               <h5>Beginner</h5>
               <p>Our Standard plan covers $500 which is suitable for a pocket point-and-shoot.</p>
             </div>
-            <div class="large-4 medium-4 small-12 columns">
+            <div class="large-4 medium-12 small-12 columns">
               <img alt="enthusiast" src="/static/Media/Default/gear-enthusiast.png" />
               <h5>Enthusiast</h5>
               <p>Our Explorer plan covers $2,000 for all of your combined cameras and lenses which is suitable for an entry level camera. </p>
             </div>  
-            <div class="large-4 medium-4 small-12 columns">
-              
-                <img alt="enthusiast" src="/static/Media/Default/gear-semi-pro.png" />
+            <div class="large-4 medium-12 small-12 columns">
+                <img alt="semi-pro" src="/static/Media/Default/gear-semi-pro.png" class="auto-size-img" />
                 <h5>Semi-Pro</h5>
                 <p>You can increase cover for your combined cameras and lenses up to $6,000 with a per item limit of $3,000 by adding these to your policy.</p>
             </div>
@@ -518,16 +523,16 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
         </div>
       </div>
       
-      <div class="row">
+      <div class="row" data-equalizer>
         <div class="small-12 medium-6 large-6 columns">
-          <div class="content-box centered light-grey">
+          <div class="content-box centered light-grey" data-equalizer-watch>
           <img alt="iPad & iPhone" src="/static/Media/Default/gear-iphone-ipad.png" />
           <h3>iPhone &amp; iPad cover</h3>
           <p>Our Standard Plan covers up to $2,000 with a per item limit of $500. our Explorer Plan covers up to $10,000 with a per item limit of $2,000. </p>
           </div>
         </div>
         <div class="small-12 medium-6 large-6 columns">
-          <div class="content-box centered light-grey">
+          <div class="content-box centered light-grey" data-equalizer-watch>
             <img alt="laptop" src="/static/Media/Default/gear-laptop.png" />
             <h3>Laptop cover</h3>
             <p>Our Standard Plan covers up to $2,000 with a per item limit of $500. our Explorer Plan covers up to $10,000 with a per item limit of $2,000. </p>
@@ -577,7 +582,8 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
       <div class="content-box teal-pattern">
         <h4>Travel Insurance Special Offers</h4>
         <p>Subscribe now for special offers and deals on World Nomads Travel Insurance</p>
-        <div class="button-primary">Sign up for offers</div>
+        <input type="text" placeholder="Enter your email" class="subscribe-input">
+        <div class="base-button orange expand">Sign up for offers</div>
       </div>
       
       <div class="content-box">
@@ -601,7 +607,7 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
           <li><a href="#"></a></li>
         </ul>
         <p>If you have a question?</p>
-        <div class="button-primary">Just ask us</div>
+        <div class="base-button orange expand">Just ask us</div>
       </div>
 
       <div class="content-box blue-pattern">
@@ -614,7 +620,7 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
           <li>View your policy</li>
         </ul>
         
-        <div class="button-primary">Sign in</div>
+        <div class="base-button orange expand">Sign in</div>
       </div>
       
       <div class="content-box">
@@ -684,10 +690,20 @@ window.NREUM||(NREUM={});NREUM.info = {"beacon":"","errorBeacon":"bam.nr-data.ne
 
               
                   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                  <script src="/static/js/main.js"></script>
+                  <script src="/static/js/foundation/foundation.js"></script>
+                  <script src="/static/js/foundation/foundation.equalizer.js"></script>
+              
+                  <script>
+                    $(document).foundation();
+                  </script>
+              
+              
               
               
               <!-- CONTENT END -->
+              
+              
+              
             </div>
 
             <div class="zone zone-footer">

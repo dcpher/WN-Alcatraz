@@ -1,5 +1,5 @@
 //Feature Box
-.feature-box, .small-feature-box, .feature-box-right-panel
+.feature-box, .feature-box-right-panel
   background-position: left top
   background-size: cover
   min-height: 460px
@@ -68,14 +68,24 @@
       
 .small-feature-box
   min-height: 160px
+  position: relative
+  background-position: left top
+  background-size: cover
+  background-repeat: no-repeat
   .bottom
-    min-height: 45px
+    //min-height: 45px
+    position: absolute
+    width: 100%
+    bottom: 0
     color: #ffffff
     margin: 0
     padding: rem-calc(10)
+    filter: alpha(opacity=90)
     p
       padding: 0px
       margin: 0
+      a
+        color: $color-inverse
   
       
 // Feature Box with Right Panel      
