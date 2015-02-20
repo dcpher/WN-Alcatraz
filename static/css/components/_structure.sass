@@ -40,10 +40,91 @@
     #homeheropromo
       padding-bottom: 24px
           
+
+// Quote Marks
+.qm 
+  margin-bottom: 0
+  &.white
+    fill: #000000
+  &.small
+    width: 50px
+    height: auto
+  &.medium
+    width: 80px
+    height: auto
+  &.large
+    width: 100px
+    height: auto
+
+//Partner 
+#partner
+  #homeheropromo
+    margin-top: 120px
+  #wnqqcalculator
+    margin-top: 90px
+    @media all and (max-width: 640px)
+      margin-top: 20px
+  h3
+    color: #ffffff
+    margin-top: 10px
+  .credits
+    margin-top: 16px
+    .avatar
+      width: 74px
+    .name
+      color: #ffffff
+      font-weight: 300
+      margin-top: 56px
+  .partnerlogo
+    float: right
+    width: 140px
+    @media all and (max-width: 1050px)
+      float: left
+    @media all and (max-width: 640px)
+      float: right
+    @media all and (max-width: 450px)
+      float: left
+#partner-highlights
+  margin-top: 50px
+  margin-bottom: 50px
+  h2
+    margin-bottom: 10px
+  p
+    margin-bottom: 30px
+#partner-bottom
+  h2
+    margin-top: 50px
+    @media all and (max-width: 640px) 
+      color: #000000
+  p
+    color: #ffffff
+    @media all and (max-width: 640px) 
+      color: #000000
+  ul
+    li
+      color: #ffffff
+      margin-left: 0
+      margin-bottom: 12px
+      @media all and (max-width: 640px) 
+        color: #000000
+      &:before         
+        font-family: WNI
+        content: '\e643'
+        font-size: 24px
+        width: 12%
+        margin-right: 3%
+        vertical-align: top
+      span
+        display: inline-block
+        width: 85%
+
+
+
 // Fix
 .small-12, .medium-6
   margin-bottom: 0
-.footer-background 
+.footer-background,
+.widget-QQC-FullWidth 
   clear: both
     
 // default images are set to 100% need to have a fix to allow for default auto sizing
