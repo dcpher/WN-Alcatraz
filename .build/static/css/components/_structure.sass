@@ -128,11 +128,12 @@
   clear: both
     
 // default images are set to 100% need to have a fix to allow for default auto sizing
-div > img
-  &.auto-size-img
-    width: auto
-    height: auto
-    margin-bottom: rem-calc(20)
+div
+  img, a > img
+    &.auto-size-img
+      width: auto
+      height: auto
+      margin-bottom: rem-calc(20)
 
     
 // Color Boxes
