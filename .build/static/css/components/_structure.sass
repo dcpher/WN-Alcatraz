@@ -59,7 +59,7 @@
 //Partner 
 #partner
   #homeheropromo
-    margin-top: 120px
+    margin-top: 110px
   #wnqqcalculator
     margin-top: 90px
     @media all and (max-width: 640px)
@@ -68,7 +68,7 @@
     color: #ffffff
     margin-top: 10px
   .credits
-    margin-top: 16px
+    margin-top: 40px
     .avatar
       width: 74px
     .name
@@ -118,7 +118,186 @@
         display: inline-block
         width: 85%
 
+//steps
+#steps
+  padding: 20px
+  color: #ffffff
+  min-height: 136px
+  margin-top: 16px
+  span
+    border-radius: 60px
+    width: 60px
+    height: 60px
+    border: 1px solid #ffffff
+    text-align: center
+    color: #ffffff
+    float: left
+    font-size: 38px
+    margin-right: 16px
+  .blue
+    background: $color-blue
+  .teal
+    background: $color-teal
+  .purple
+    background: $color-purple
+  p
+    display: inline
+//Side Pannel
+#sidepannel 
+  float: left
+  padding: 20px
+  background: #f4f4f4
+  width: 100%
+  margin-top: 16px
+  h4
+    margin-bottom: 16px
+  #countbox
+    width: 100%
+    margin-bottom: 20px
+    #secs
+      display: none
+    #days,
+    #hours,
+    #mins
+      background: #ffffff
+      float: left
+      width: 31%
+      margin-right: 2%
+      text-align: center
+      font-size: 52px
+      color: $color-teal
+      font-weight: 500
+      margin-bottom: 0
+      line-height: 60px
+      padding-top: 8px
+      #hours_text,
+      #days_text,
+      #mins_text
+        color: $color-dark-grey
+        font-size: 18px
+        font-weight: 300
+        padding-bottom: 0px
+        margin-top: 0
+        line-height: 18px
+    #mins
+      margin-right: 0
+  p
+    &.small
+      font-size: 12px
+      clear: both
+      margin-top: 16px
+      float: left
+      width: 100%
+  #importantdate
+    background: #ffffff
+    width: 96%
+    float: left
+    margin-top: 12px
+    padding-right: 4%
+    .date
+      background: $color-teal
+      color: #ffffff
+      width: 65px
+      float: left
+      padding: 8px
+      margin-bottom: 0
+      text-align: center
+      margin-right: 16px
+      div
+        font-size: 38px
+        line-height: 100%
+        margin-bottom: 0
+      span
+        font-size: 14px
+        line-height: 100%
+    .info
+      display: inline
+      padding: 8px
+      margin-bottom: 0
+      h5
+        padding-top: 4px
+        margin-bottom: 4px
+      a
+        color: $color-dark-grey
+        &
+        &:after         
+          font-family: WNI
+          content: '\e60d'
+          margin: 0px 2px 0px
+          display: inline-block  
+#herovideo
+  &.hero-content-panel
+    height: 460px
+    h1 
+      margin-top: -350px
+      color: #ffffff
+      text-align: center
+      max-width: 100%
+      margin-bottom: 36px
+      position: relative
+      z-index: 800
+  .herovideo 
+    height: 460px
+    width: 100%
 
+@media all and (max-width: 640px)
+  #herovideo 
+    background-image: url('//www.worldnomads.com/Media/Default/video/extraordinary_experiences_mobile.jpg')
+    min-height: 500px
+    h1 
+      margin-top: 150px
+    .herovideo
+      display: none
+
+
+#application 
+  background: #f4f4f4
+  padding-top: 32px
+  padding-bottom: 32px
+  margin-top: 32px
+  margin-bottom: 32px
+  label
+    width: 100%
+    float: left
+    clear: both
+    margin-bottom: 4px
+    margin-top: 16px
+  .country-of-residence,
+  .travelling-to-next
+    select
+      visibility: hidden
+      position: fixed
+      left: -9999px
+      top: 0
+  .adventure-activities
+    input,
+    label
+      visibility: hidden
+      position: fixed
+      left: -9999px
+      top: 0
+  .datepicker .datepicker-calendar:last-child
+    display: none
+  #dob
+    #fieldchitdrdy,
+    #fieldchitdr,
+    #fieldchitdryr
+      width: 30%
+      float: left
+  ul.adventure-activities-selected
+    margin-top: 8px
+    float: left
+    margin-bottom: 8px
+    li
+      background: $color-teal
+      color: #ffffff
+      float: left
+      padding: 8px 12px 
+      margin-right: 8px
+      span
+        cursor: pointer
+        margin-left: 16px
+        font-size: 12px 
 
 // Fix
 .small-12, .medium-6

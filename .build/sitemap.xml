@@ -21,6 +21,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/master-list-of-wn-activities.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/nomadic-matt.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -32,6 +37,11 @@
     </url>
     <url>
         <loc>/story-content.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/travel-insurance-au-index-v2.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
