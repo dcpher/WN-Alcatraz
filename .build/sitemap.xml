@@ -6,6 +6,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/extraordinary-experiences.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/homepage.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
