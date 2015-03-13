@@ -17,9 +17,9 @@
 <script>
   $(function() {
     $('.herovideo').videoBG({
-        mp4:'/static/Media/Default/video/extraordinary_experiences_html5_15mb_5mb.mp4.mp4" %}',
-        ogv:'//www.worldnomads.com/Media/Default/video/extraordinary_experiences_html5_15mb_5mb.oggtheora.ogv" %}',
-        webm:'/static/Media/Default/video/extraordinary_experiences_html5_15mb_5mb.webmsd.webm',
+        mp4:'//www.worldnomads.com/Media/Default/video/extraordinary_experiences_html5_15mb_5mb.mp4.mp4',
+        ogv:'//www.worldnomads.com/Media/Default/video/extraordinary_experiences_html5_15mb_5mb.oggtheora.ogv',
+        webm:'//www.worldnomads.com/Media/Default/video/extraordinary_experiences_html5_15mb_5mb.webmsd.webm',
         poster:'//www.worldnomads.com/Media/Default/video/extraordinary_experiences.jpg',
         scale:true,
         zIndex:0
@@ -31,15 +31,6 @@
 <!-- Hero Content Panel End -->       
 
 <!-- Countdown Script -->
-<script type="text/javascript">
-  var year = 2015; 
-  var month = 03; 
-  var day = 06;
-  var hour= 14; 
-  var min= 0; 
-  var sec= 0;
-</script>
-<script type="text/javascript" src="//www.worldnomads.com/Media/Default/scripts/js/counter-countdown.js"></script>
 
 
 <div id="sharetools-long">
@@ -63,7 +54,15 @@
 </div>
 
 
- 
+ <script type="text/javascript">
+  var year = 2015; 
+  var month = 04; 
+  var day = 17;
+  var hour= 14; 
+  var min= 0; 
+  var sec= 0;
+</script>
+<script type="text/javascript" src="//www.worldnomads.com/Media/Default/scripts/js/counter-countdown.js"></script>
 <div class="row" id="article-content">
   <div class="large-8 medium-8 small-12 columns">
 
@@ -86,9 +85,17 @@
         <div id="countbox"></div>
         <p class="small">Entries close March 6, 2015 at 2PM <a target="_blank" href="http://www.timeanddate.com/library/abbreviations/timezones/au/edt.html">(AEDT)</a></p>
       </div>
+
+      <div id="sidepannel">
+        <h4>In partnership with</h4>
+        <a href="http://www.newfoundlandlabrador.com" target="_blank" id="comppartnerlogo"><img src="//www.worldnomads.com/Media/Default/Partners/newfoundlandcanada.jpg" alt="Newfoundland and Labrador" /></a>
+        <a href="http://www.destinationecuador.com/" target="_blank" id="comppartnerlogo"><img src="//www.worldnomads.com/Media/Default/Partners/tropic.jpg" alt="Tropic Journeys" /></a>
+        <a href="http://jamtland.se/index.php/se/inside-jamtland-harjedalen-turism" id="comppartnerlogo" target="_blank"><img src="//www.worldnomads.com/Media/Default/Partners/jamtland-harjedalen-turism.jpg" alt="Jämtland Härjedalen Sweden" /></a>
+      </div>
     
   </div>
 </div>
+
 <div class="row" id="article-content">
   <div class="large-12 medium-12 small-12 columns">
     <h4>Adrenaline pumping already? Here’s how to apply.</h4>
@@ -255,6 +262,7 @@
                                                           
 
 <form action="http://worldnomadsgroup.createsend.com/t/y/s/fhrdlr/" method="post" id="subForm" class="ee-form">
+    <h4 class="sectionheader">A little about you...</h4>
     <div class="large-4 medium-4 small-12 columns">
         <label for="fieldName">Name</label>
         <input id="fieldName" name="cm-name" type="text" placeholder="Firstname Lastname"/>
@@ -539,10 +547,8 @@
         <label for="fieldchitdt">Instagram</label>
         <input id="fieldchitdt" name="cm-f-chitdt" type="text" placeholder="username" />
     </div>
-    <div class="large-4 medium-4 small-12 columns">
-        <label for="fieldchitdi">Youtube</label>
-        <input id="fieldchitdi" name="cm-f-chitdi" type="text" placeholder="username" />
-    </div>
+
+    <h4 class="sectionheader">The competition</h4>
     <div class="large-4 medium-4 small-12 columns">
         <label for="fieldchithk">Where do you want to go?</label>
         <select id="fieldchithk" name="cm-fo-chithk">
@@ -552,10 +558,8 @@
             <option value="885429">Sweden</option>
         </select>
     </div>
-    <div class="clear"></div>
-    <div class="large-8 medium-12 small-12 columns">
-    <label>Which 7 adventure activity would you love to do?</label>
-    <ul class="adventure-activities-selected"></ul>
+    <div class="large-4 medium-4 small-12 columns">
+    <label>Which 7 activity would you love to do?</label>
     <input type="text" class="adventure-autocomplete" />
     <div class="adventure-activities">
         <input id="fieldchithd-0" name="cm-fo-chithd" value="885315" type="checkbox" /> <label for="fieldchithd-0">Aerial safari</label>
@@ -672,20 +676,68 @@
         <input id="fieldchithd-111" name="cm-fo-chithd" value="885426" type="checkbox" /> <label for="fieldchithd-111">Yoga</label>
       </div>
     </div>
+    <div class="large-4 medium-4 small-12 columns">
+      <ul class="adventure-activities-selected"></ul>
+    </div>
     
     
     <div class="large-8 medium-12 small-12 columns">
-        <label for="fieldchithh">Why should you win</label>
-        <textarea id="fieldchithh" name="cm-f-chithh" type="text" /></textarea>
+        <label for="fieldchithh">Tell us in 100 words or less about an adventure activity that you'll never forget.</label>
+        <textarea class="raw-adventure-description" type="text" /></textarea>
+        <!-- Hidden fields 1- 15 -->
+        <input id="fieldckyhli" class="hidden-concat" name="cm-f-ckyhli" type="hidden" />
+        <input id="fieldckyhld" class="hidden-concat" name="cm-f-ckyhld" type="hidden" />
+        <input id="fieldckyhlh" class="hidden-concat" name="cm-f-ckyhlh" type="hidden" />
+        <input id="fieldckyhlk" class="hidden-concat" name="cm-f-ckyhlk" type="hidden" />
+        <input id="fieldckyhlu" class="hidden-concat" name="cm-f-ckyhlu" type="hidden" />
+        <input id="fieldckyhrl" class="hidden-concat" name="cm-f-ckyhrl" type="hidden" />
+        <input id="fieldckyhrr" class="hidden-concat" name="cm-f-ckyhrr" type="hidden" />
+        <input id="fieldckyhry" class="hidden-concat" name="cm-f-ckyhry" type="hidden" />
+        <input id="fieldckyhrj" class="hidden-concat" name="cm-f-ckyhrj" type="hidden" />
+        <input id="fieldckyhrt" class="hidden-concat" name="cm-f-ckyhrt" type="hidden" />
+        <input id="fieldckyhri" class="hidden-concat" name="cm-f-ckyhri" type="hidden" />
+        <input id="fieldckyhrd" class="hidden-concat" name="cm-f-ckyhrd" type="hidden" />
+        <input id="fieldckyhrh" class="hidden-concat" name="cm-f-ckyhrh" type="hidden" />
+        <input id="fieldckyhrk" class="hidden-concat" name="cm-f-ckyhrk" type="hidden" />
+        <input id="fieldckyhru" class="hidden-concat" name="cm-f-ckyhru" type="hidden" />
+        <!-- Hidden fields 1- 15 END -->
+
+        <script>
+          $(function() {
+            var queryCharLim = 100;
+            var $concatInputs = $("input.hidden-concat");
+            var $textareaAdvDesc = $("textarea.raw-adventure-description");
+
+            $textareaAdvDesc.on("change", function(e) {
+              var $this = $(this);
+              var currentText = $this.val();
+              var iterator = 1;
+
+              $concatInputs.each(function() {
+                $(this).attr("value", "");
+              });
+
+              for (var i = 0; (i * queryCharLim) < currentText.length; i++) {
+                var from = i * queryCharLim;
+                var to = (i + 1) * queryCharLim;
+                var subset = currentText.substr(from, queryCharLim);
+                $concatInputs.eq(i).val(subset);
+              }
+              
+            });
+          });
+          
+
+        </script>
     </div>
-    <div class="clear"></div>
+    <h4 class="sectionheader">Are you traveling in the next 12 months?</h4>
     <div class="large-4 medium-4 small-12 columns">
-      <p>Are you travelling in the next 12 months?</p>
-      <div>
+      <label>Are you travelling in the next 12 months?</label>
+      <div class="radioinput">
         <input type='radio' name="travelling-q" id='travelling-yes' class='travelling-radio' />
         <label for='travelling-yes'>Yes</label>
       </div>
-      <div>
+      <div class="radioinput">
         <input type='radio' name="travelling-q" id='travelling-no' class='travelling-radio' />
         <label for='travelling-no'>No</label>
       </div>
@@ -968,13 +1020,13 @@
         <button type="submit" class="base-button orange">Submit entry</button>
     </div>
     <div class="large-8 medium-8 small-12 columns">
-      <div class="left">
+      <div class="terms">
+        <input id="fieldchithu" name="cm-f-chithu" type="checkbox" value="yes" />
         <label for="fieldchithu">I agree to the Terms and Conditions of this campaign.</label>
-        <input id="fieldchithu" name="cm-f-chithu" type="checkbox"  class="left" />
       </div>
-      <div class="left">
-        <label for="fieldchithu">I would like to hear more from these destinations.</label>
-        <input id="fieldchithu" name="cm-f-chithu" type="checkbox" class="left" />
+      <div class="terms">
+        <input id="fieldckydku" name="cm-f-ckydku" type="checkbox" value="yes" />
+        <label for="fieldckydku">I would like to hear more from these destinations.</label>
       </div>
     </div>
         <input id="fieldchitkl" name="cm-f-chitkl" type="hidden" value="extraordinary-experiences" />
@@ -991,7 +1043,7 @@
           form.append("&lt;p class='error'&gt;" + data.Message + "&lt;/p&gt;");
         } else { // 200
           wng.googleAnalytics.trackEvent('Content', 'Guide');
-          form.html("<div class='successmessage'><p>Thanks for applying</div>");
+          form.html("<div class='successmessage'><p>Thanks for applying, we will announce the winner on the 14th May 2015.</div>");
         }
       });
       e.preventDefault();
@@ -1006,18 +1058,21 @@
 <div class="row" id="article-content">
   <div class="large-8 medium-8 small-12 columns">
     <div>
+      <img src="//www.worldnomads.com/Media/Default/Partners/canada.jpg" class="locationimage" />
       <h4>Canada - Newfoundland and Labrador</h4>
       <p>No matter where you find yourself in Newfoundland and Labrador, you’ll feel so very, very far way. This place does that to you. It sweeps you off your feet and keeps you there for as long as you want. The land itself is like no other - cliffs and barrens, bights and guts - around every corner there’s the unexpected. </p>
 
       <p>Your adventure will lead you along ancient footpaths to deep fjords, towering cliffs and sub-arctic barrens, through lush inland forests, and over the earth’s mantle. Take a sea kayak to caves, inlets, and secluded beaches along routes protected by offshore islands, and view the land from the sea. Immerse yourself in a place where 10,000 whales get front row seats to go people watching, where icebergs drift along ancient shores, where there isn’t a rock, cave or cliff without a story attached.</p>     
     </div>
     <div>
+      <img src="//www.worldnomads.com/Media/Default/Partners/sweden.jpg" class="locationimage" />
       <h4>Sweden - J&auml;mtland H&auml;rjedalen</h4>
       <p>The region of Jämtland H&auml;rjedalen is situated in central Sweden, has a unique flora and fauna and is often referred to as "the lungs of Europe". </p>
       <p>In addition to the clean air, it is well known for its accessible wilderness, superb homemade foods, the contrasts of the midnight sun and the winter darkness and its five clearly defined seasons.</p>
       <p>In wintertime skiing is the most popular activity in the region, but the summertime showcases the regions picturesque landscapes in which you can enjoy a hike with reindeers, cycle through small villages and down rugged mountains, visit the beautiful Storsj&ouml;n lake and even meet the resident lake monster, The Storsj&ouml;odjuret... if you’re lucky! </p>     
     </div>
     <div>
+      <img src="//www.worldnomads.com/Media/Default/Partners/ecuador.jpg" class="locationimage" />
       <h4>Ecuador</h4>
       <p>For its size, Ecuador has an especially impressive array of interesting sites and cities. The high Andes beckon with stunning vistas, colourful indigenous markets, and scenic colonial neighbourhoods, where Ecuador’s “Avenue of the Volcanoes” is sure to inject you with your first dose of adventure. The eastern lowlands offer an exciting Amazonian experience where you can visit exotic wildlife species and the ancient Huaorani tribe of the rainforest. </p>
       <p>Then there are the Galapagos Islands. Located more than 900 kilometers from the coast, these fabled islands are part of Ecuadorian territory and the jewel of Ecuador. The Galapagos are on the bucket list of nearly every world traveller and those who make their way to this volcanic archipelago find their expectations surpassed by their experience.</p>     
