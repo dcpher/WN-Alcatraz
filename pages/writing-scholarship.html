@@ -1,0 +1,723 @@
+{% extends "wn-base.html" %}
+{% block content %}
+
+<!-- Header -->
+
+<div class="hero-content-panel" id="scholarship">
+  <div class="row">  
+    <div class="small-12 medium-8 large-8 columns">
+      <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <ul class="breadcrumb">
+          <li><a href="/">World Nomads</a></li>
+          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/learn" itemprop="url"><span itemprop="title">Learn</span></a></li>
+          <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/learn/travel-writing" itemprop="url"><span itemprop="title">Travel Writing</span></a></li>
+        </ul>
+      </div>
+      <h1>Win a writing road trip across the U.S.! </h1>
+      <p class="intro">Plus be mentored by a Lonely Planet author in San Francisco</p>
+      <div class="loggedin">
+        <form action="http://scholarships.worldnomads.com/application_form.aspx" method="get">
+          <button class="base-button orange">Apply now</button>
+        </form>
+      </div>
+      <div class="notloggedin" >
+        <form action="http://scholarships.worldnomads.com/application_form.aspx" method="get">
+          <button class="base-button orange">Apply now</button>
+        </form>
+      </div>
+    </div>
+    <div class="small-12 medium-4 large-4 columns">
+      <div class="sponsor">
+        <p class="small">In partnership with:</p>
+        <a href="http://www.lonelyplanet.com/" target="_blank"><img src="/Media/Default/LearnImages/writing2015/lonely-logo.png" title="Lonely Planet" /></a>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+<style>
+#scholarship .sponsor {
+  float:right;
+  margin-top: 200px;
+}
+#scholarship .sponsor p {
+  text-align: center;
+}
+#scholarship .sponsor a img {
+  width: 180px;
+  display: inline-block;
+  border: none;
+}
+#scholarship p.small { font-size: 12px;}
+@media all and (min-width: 860px) {
+  #scholarship {
+    background-image: url('/Media/Default/LearnImages/hero_srilanka_full.jpg');
+    background-position: top center;
+    min-height: 550px;
+  }
+}
+@media all and (max-width: 860px) {
+  #scholarship {
+    background-image: url('/Media/Default/LearnImages/hero_srilanka_tablet.jpg');
+    min-height: 440px;
+  }
+}
+@media all and (max-width: 640px) {
+  .scholarship .sponsor {
+    float: left;
+    margin-top: 0;
+  }
+  .scholarship .sponsor p {
+    text-align: left;
+  }
+}
+@media all and (max-width: 500px) {
+  #scholarship {
+    background-image: url('/Media/Default/LearnImages/hero_srilanka_mobile.jpg');
+  }
+}
+</style>
+<script>
+  if($(".login").text()=="Sign In")
+  {
+    $(".loggedin").hide();
+    $(".notloggedin").show();
+  }
+  else
+  {
+    $(".loggedin").show();
+    $(".notloggedin").hide();
+  }
+</script>
+
+
+<!-- Header END -->
+
+<!-- Pannel 1 -->
+<div id="sharetools-long">
+  <div class="row">
+    <div id="socialarea">     
+      <div id="sharedcount">
+        <div id="total"></div>
+        <p>Shares</p> 
+      </div>
+      <div id="share-icons">
+        <a class="facebook" target="_blank"><span>Share on Facebook</span>&#xe607;</a>
+        <a class="twitter" target="_blank"><span>Share on Twitter</span>&#xe602;</a>
+        <a class="pinterest">&#xe603;</a>
+        <a class="gplus" target="_blank">&#xe605;</a>
+        <a class="linkedin" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/linkedin-share-icon.png" /></a>
+        <a class="stumbleupon" target="_blank"><img src="//www.worldnomads.com/Media/Default/shareimages/stumble-share-icon.png" /></a>
+        <a class="plus"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Pannel 1 END -->
+
+
+<!-- Pannel 2 -->
+<script type="text/javascript">
+  var year = 2015; 
+  var month = 05; 
+  var day = 27;
+  var hour= 14; 
+  var min= 0; 
+  var sec= 0;
+</script>
+<script type="text/javascript" src="/Media/Default/scripts/js/counter-countdown.js"></script>
+
+<div class="row" id="article-content">
+  <div class="large-8 medium-8 small-12 columns">
+    <h3>Do you dream of hitting the open road and writing about your adventures?</h3>
+    <p class="highlight">We have teamed up with Lonely Planet to bring you our 2015 Travel Writing Scholarship – and this year, we want to send you to the U.S. on your ultimate American summer road trip! </p>
+    <p>Yes, we said road trip - again! We are looking for three talented aspiring travel writers to write their way across the U.S., Whether you want to explore the Pacific Coast the deep south, Route 66, the Rocky Mountains, or New England this is your chance to discover the places and personalities that make America the confounding and captivating melting pot that it is. </p>
+    <p>So, it's time to stop dreaming, and get writing, because we want to send not one, but three budding travel writers to be mentored by a veteran Lonely Planet author and explore the U.S. on their own terms.</p>
+  
+    <h3>The Prizes</h3>
+    <p class="highlight">The 3 scholarship recipients will receive:</p>
+    <ul class="disc">
+      <li>A 3-day custom travel writing course in San Francisco with mentor and Lonely Planet author John Vlahides</li>
+      <li>A 10-day road trip across the U.S. (including a $3000 AUD stipend to spend on food, transport, activities and accommodation)</li>
+      <li>Round-trip airfare from your country of residence to San Francisco</li>
+      <li>Enrollment in the MatadorU Travel Writing course (with 3 months unlimited access to the course)</li>
+      <li>Travel insurance for the duration of the trip from World Nomads</li>
+    </ul>
+    <p class="highlight">The top shortlisted entries will receive:</p>
+    <ul>
+      <li>Enrollment in the MatadorU Travel Writing mini course (with 3 months unlimited access to the course)</li>
+    </ul>
+  </div>
+
+  <div class="large-4 medium-4 small-12 columns">
+	  <div id="sidepannel">
+	    <h4>Applications closes in...</h4>
+	    <div id="countbox"></div>
+	    <p class="small">Entries close May 27, 2015 at 2PM <a target="_blank" href="http://www.timeanddate.com/library/abbreviations/timezones/au/edt.html">(AEDT)</a></p>
+	  </div>
+
+	  <div id="sidepannel">
+        <h4>Not ready to apply yet?</h4>
+	    <form class="scholarship-reminder"  action="http://worldnomadsgroup.createsend.com/t/y/s/fuinl/" method="post">
+	      <p>Sign up below to receive a reminder 7 days before the scholarship closes.</p>
+	      <input id="fieldEmail" name="cm-fuinl-fuinl" type="email" placeholder="Enter your email" required style="width: 100%;" />
+	      <button class="base-button orange expand" style="margin-top:16px;">Subscribe</button>
+
+
+
+	    </form>
+	    <script>
+	          $(function () {
+	            $('.scholarship-reminder').submit(function (e) {
+	              var form = $(this);
+	              $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
+	                if (data.Status === 400) {
+	                 form.find('.error').remove();
+	                  form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
+	              } else { // 200
+	                        wng.googleAnalytics.trackEvent('Scholarship', 'Reminder');
+	                        form.html("Thank you, we will email you 7 days before the scholarship closes.");
+	                }
+	            });
+	            e.preventDefault();
+	          });
+	        });
+	    </script>
+	  </div>
+  </div>
+</div>
+<!-- Pannel 2 END -->
+
+
+<!-- Pannel 3 -->
+<div class="row">
+  <div class="large-3 medium-6 small-12 columns">
+    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+      <ul class="breadcrumb">
+        <li>
+          <a href="/learn/travel-writing">Travel Writing</a>
+        </li>
+        <li>
+          <a href="#apply">How</a>
+        </li>
+      </ul>
+      <a href="#apply"><h4>How</h4></a>
+      <div class="bottom teal">
+        <span class="feature-link-title">How to apply</span>
+        <p>1. Submit your recipe.</p>
+        <p>2. Upload your photos.</p>
+        <p>3. Tell us the story behind your recipe.</p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="large-3 medium-6 small-12 columns">
+    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+      <ul class="breadcrumb">
+        <li>
+          <a href="/learn/travel-writing">Travel Writing</a>
+        </li>
+        <li>
+          <a href="#">Mentor</a>
+        </li>
+      </ul>
+      <a href="#apply"><h4>Meet your Mentor</h4></a>
+      <div class="bottom teal">
+        <span class="feature-link-title">To apply, you need to:</span>
+        <p>1. Submit your recipe.</p>
+        <p>2. Upload your photos.</p>
+        <p>3. Tell us the story behind your recipe.</p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="large-3 medium-6 small-12 columns">
+    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+      <ul class="breadcrumb">
+        <li>
+          <a href="/learn/travel-writing">Travel Writing</a>
+        </li>
+        <li>
+          <a href="#professional">Professional</a>
+        </li>
+      </ul>
+      <a href="#professional"><h4>Am I a professional?</h4></a>
+      <div class="bottom teal">
+        <span class="feature-link-title">To apply, you need to:</span>
+        <p>1. Submit your recipe.</p>
+        <p>2. Upload your photos.</p>
+        <p>3. Tell us the story behind your recipe.</p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="large-3 medium-6 small-12 columns">
+    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+      <ul class="breadcrumb">
+        <li>
+          <a href="/learn/travel-writing">Travel Writing</a>
+        </li>
+        <li>
+          <a href="#questions">Questions</a>
+        </li>
+      </ul>
+      <a href="#apply"><h4>Any questions?</h4></a>
+      <div class="bottom teal">
+        <span class="feature-link-title">Your questions answered:</span>
+        <p><a href="http://www.worldnomads.com/learn/travel-writing/travel-writing-scholarship-faq">Check out our FAQ page which provides more detail on the the trips, our judging criteria &amp; eligibility.<span></span></a></p>
+      </div>
+    </div>
+  </div>  
+</div>
+<!-- Pannel 3 END -->
+
+
+<!-- Pannel 4 -->
+<div class="row">
+  <div class="large-8 medium-6 small-12 columns">
+
+
+      <div id="doing">
+        <h3>What You'll be Doing</h3>
+        <p>The three scholarship recipients will be flown from their countries of residence to San Francisco where they will spend three days in a Travel Writing workshop. Under the mentorship of veteran Lonely Planet author John Vlahides, you will learn how to find a great story, create solid pitches, improve your writing skills and gain a better understanding of the travel writing industry.</p>
+        <p>After the workshop, each writer will be off solo on their own customised 10-day road trip itineraries across the U.S. to explore the nooks and crannies of this vast, diverse and colourful country.</p>
+        <p>You will be required to produce and submit 20 point-of-interest or "travel treasure" reviews (plus photos) from your road trip (within 2 months of your return) that will be published on World Nomads as a U.S. Road Trip Guide. You will also post photos of your top road trip moments and travel treasures to Instagram on a daily basis so that we can follow your adventures.</p>
+      </div>
+
+      <div id="who">
+        <h3>Who can apply?</h3>
+        <ul class="disc">
+          <li>This opportunity is open to students, emerging and non-professional writers and lovers of travel looking for a career change</li>
+          <li>The scholarship is open to all nationalities; however, you must have an exceptionally high degree of proficiency in written English</li>
+          <li>The opportunity is designed to give you a taste of what it's like to be a travel writer on the road, so you must be comfortable travelling and working on your own</li>
+          <li>Minimum age 18 by the date the scholarship application closes (May 27, 2015)</li>
+          <li>You need a current passport with at least six months left before expiry</li>
+          <li>You must be available as per the dates set out. Please note these dates are not changeable in any way, you must be available for the entire assignment</li>
+          <li>You should be an exceptional writer with a lust for adventure travel, a desire to experience new cultures and above all, a burning desire to become a professional travel writer!</li>
+        </ul>
+      </div>
+
+      <div id="professional">
+        <h3>Am I considered a professional travel writer?</h3>
+        <p class="highlight">Essentially this is a 'learning opportunity' for someone who is looking for an introduction into the travel writing industry and more importantly, is keen to be mentored.</p>
+        <p>As a guide, for the purposes of the opportunity, we would consider you to be professional writer if you have been published regularly in newspapers, travel magazines or travel journals. We would also consider you to be a professional writer if you derive more than 25% of your income from writing of any kind.</p>
+        <p>If you have had a few stories published, or keep a regular travel blog then we would not consider this professional.</p>
+      </div>
+    
+
+      <div id="apply">
+        <h3>How to apply</h3>
+        <p class="highlight">To apply, we want you to write a mini-guide to an experience you've had. We're trying to unearth "travel treasures", or hidden gems that you know other nomads would enjoy.</p>
+        <p>Limit it to a specific location - a temple, a museum, a beach, a park, a train carriage. But tell us what happened to you, why it was special, how it made you feel. Then most importantly, include tips on how others could replicate your experience (where do they go, when, etc.). You can also make some suggestions on improving the experience, things you'd do differently if you were planning to do it again. Give us the insider's knowledge on the experience – tell us why we should shun the obvious, and choose the alternative you discovered!</p>
+        <ul class="disc">
+          <li><span>Write 2500 characters (including spaces) about an experience you had at a single place and how it impacted you. Include an explanation or details of how other travellers might be able to replicate that experience for themselves.<br/><br/>Need a little inspiration? Here are a couple examples from our own WN staff.<br/><br/>This practical guide should also showcase your writing skills and your personality in a fun piece celebrating the hidden gems we all seek.</span></li>
+          <li><span>Plan your itinerary. Tell us two places in U.S. you would like to visit and write about on your road trip. </span></li>
+          <li><span>Complete an entry form which includes contact details and a maximum 1200 character essay on why you should be chosen and what the opportunity will mean for you. Your answer will provide considerable weight in the judging process.</span></li>
+        </ul>
+        <p>One entry per person. The entry must be submitted in English.</p>
+        <p>Note: Once you apply, you may not go back and edit your entry. Please make sure you are completely satisfied with your essay before you submit an application.</p>       
+      </div>
+
+      <div id="judges">
+        <h3>What the judges are looking for</h3>
+        <p class="highlight">It's up to you to convince our judging panel through your writing that you have the spirit of adventure and passion for travel writing to be chosen for this scholarship.</p>
+        <p>We will be looking for:</p>
+        <ul class="disc">
+          <li>great descriptive ability (without getting flowery)</li>
+          <li>strong eye for detail</li>
+          <li>ability to uncover a great "travel treasure" and tell a compelling and original story about a specific place</li>
+          <li>excellent spelling and grammar and a knack for avoiding clichés</li>
+        </ul>
+        <p>The 3 recipients of the Scholarship, along with the shortlist of best entries will be published on the WorldNomads.com website on June 6th, 2014.</p>
+      </div>
+
+
+  </div>
+
+    
+  <div class="large-4 medium-6 small-12 columns">
+    <div id="sidepannel">
+      <h4>Important dates</h4>
+      <!-- Date -->
+      <div id="importantdate">
+        <div class="date">
+          <div>27</div>
+          <span>May</span>
+        </div>
+        <div class="info">
+          <h5>Program applications close</h5>
+        </div>
+      </div>
+      <!-- Date END -->
+
+      <!-- Date -->
+      <div id="importantdate">
+        <div class="date">
+          <div>23</div>
+          <span>June</span>
+        </div>
+        <div class="info">
+          <h5>Application judging</h5>
+        </div>
+      </div>
+      <!-- Date END -->
+
+      <!-- Date -->
+      <div id="importantdate">
+        <div class="date">
+          <div>24</div>
+          <span>June</span>
+        </div>
+        <div class="info">
+          <h5>Winners announced</h5>
+        </div>
+      </div>
+      <!-- Date END -->
+
+      <!-- Date -->
+      <div id="importantdate">
+        <div class="date">
+          <div>10</div>
+          <span>August</span>
+        </div>
+        <div class="info">
+          <h5>Arrive in San Francisco</h5>
+        </div>
+      </div>
+      <!-- Date END -->
+
+      <!-- Date -->
+      <div id="importantdate">
+        <div class="date">
+          <div>11</div>
+          <span>August</span>
+        </div>
+        <div class="info">
+          <h5>Travel Writing workshop</h5>
+        </div>
+      </div>
+      <!-- Date END -->
+
+      <!-- Date -->
+      <div id="importantdate">
+        <div class="date">
+          <div>14</div>
+          <span>August </span>
+        </div>
+        <div class="info">
+          <h5>Solo U.S. Road Trips</h5>
+        </div>
+      </div>
+      <!-- Date END -->
+
+    </div>  
+
+      <div class="applynowarea">
+        <div class="loggedin">
+          <form action="http://scholarships.worldnomads.com/application_form.aspx" method="get">
+            <button class="base-button orange expand">Apply now</button>
+          </form>
+        </div>
+      
+        <div class="notloggedin" >
+          <form action="http://scholarships.worldnomads.com/application_form.aspx" method="get">
+            <button class="base-button orange expand">Apply now</button>
+          </form>
+        </div>
+      </div>
+
+<script>
+  if($(".login").text()=="Sign In")
+  {
+    $(".loggedin").hide();
+    $(".notloggedin").show();
+  }
+  else
+  {
+    $(".loggedin").show();
+    $(".notloggedin").hide();
+  }
+</script>
+
+    </div>
+  </div>
+</div>
+<!-- Pannel 4 END -->
+
+
+<!-- Pannel 5 -->
+<div class="row">
+  <div class="large-12 medium-12 small-12 columns">
+    <h3>Read the winning and best entries from our 2013 Travel Writing Scholarship</h3>
+  </div>
+  <div class="large-3 medium-6 small-12 columns">
+    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+      <ul class="breadcrumb">
+        <li>
+          <a href="/learn/travel-writing">Travel Writing</a>
+        </li>
+      </ul>
+      <a href="http://journals.worldnomads.com/rmckinley/" target="_blank"><h4>Beluga Smile</h4></a>
+      <div class="bottom teal">
+        <span class="feature-link-title">2014 Winner</span>
+        <p><a href="http://journals.worldnomads.com/rmckinley/" target="_blank">Here is Rachel's winning story, read about her road trip through Prague and London.<span></span></a></p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="large-3 medium-6 small-12 columns">
+    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+      <ul class="breadcrumb">
+        <li>
+          <a href="/learn/travel-writing">Travel Writing</a>
+        </li>
+      </ul>
+      <a href="http://journals.worldnomads.com/aeileenr/" target="_blank"><h4>Wrong Side of the Wall</h4></a>
+      <div class="bottom teal">
+        <span class="feature-link-title">2014 Winner</span>
+        <p><a href="http://journals.worldnomads.com/aeileenr/" target="_blank">Read Amanda's winning story and her adventures in Venice and Copenhagen.<span></span></a></p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="large-3 medium-6 small-12 columns">
+    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+      <ul class="breadcrumb">
+        <li>
+          <a href="/learn/travel-writing">Travel Writing</a>
+        </li>
+      </ul>
+      <a href="http://journals.worldnomads.com/jazzanomadica/" target="_blank"><h4>Never-Ending Horizon</h4></a>
+      <div class="bottom teal">
+        <span class="feature-link-title">2014 Winner</span>
+        <p><a href="http://journals.worldnomads.com/jazzanomadica/" target="_blank">Check out Jarryd's winning story and read about his travels in Lisbon and Madrid.<span></span></a></p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="large-3 medium-6 small-12 columns">
+    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+      <ul class="breadcrumb">
+        <li>
+          <a href="/learn/travel-writing">Travel Writing</a>
+        </li>
+      </ul>
+      <a href="http://journals.worldnomads.com/scholarships/story/117899/Worldwide/Travel-Writing-Scholarship-2014-Euro-Road-Trip-Winners-Announced" target="_blank"><h4>Euro Road Trip 2014</h4></a>
+      <div class="bottom teal">
+        <span class="feature-link-title">2014 Winner</span>
+        <p><a href="http://journals.worldnomads.com/scholarships/story/117899/Worldwide/Travel-Writing-Scholarship-2014-Euro-Road-Trip-Winners-Announced" target="_blank">Interested in what makes a good story? Check out las year's winners and the shortlisted entries.<span></span></a></p>
+      </div>
+    </div>
+  </div>  
+</div>
+<!-- Pannel 5 END --> 	
+
+
+
+<!-- Pannel 6 -->
+<!-- Fixing the markup -->
+<script type="text/javascript">
+$(function () {
+	$("h2.comment-count, h2 + ul.comments, #comment-form-beacon + form").wrapAll("<div id='comment-wrapper' />")
+});
+</script>
+<!-- Fixing the markup END -->
+
+<style>
+ #comment-wrapper {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 71.875rem;
+    padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin-bottom: 90px;
+  }
+  #comment-wrapper:before {
+  	content: "Got a question? Post it below!";
+  	padding-bottom: 32px;
+  	font-size: 32px;
+  	width: 100%;
+  	float: left;
+  }
+  #comment-wrapper .comment-count {
+  	display: none;
+  }
+  #comment-wrapper ul.comments {
+	list-style: none;
+	border-bottom: 1px solid #eeeeee;
+	margin-left: 0;
+  }
+  #comment-wrapper ul.comments li {
+	border-bottom: 1px solid #eeeeee;
+padding-top:8px;
+  }
+  #comment-wrapper ul.comments li.last {
+  	border-bottom: none;
+  }  
+  #comment-wrapper ul.comments p {
+  	font-size: 15px;
+  	line-height: 20px;
+  }
+  #comment-wrapper #add-comment {
+  	font-size: 24px;
+  	margin-bottom: 8px;
+  }
+  #comment-wrapper ol {
+  	list-style: none;
+  	max-width: 540px;
+  	margin-left: 0;
+  }
+  #comment-wrapper ol li {
+  	list-style: none;
+  }
+  #comment-wrapper .primaryAction {
+  	font-size: 18px;
+  	right: 5px;
+  	top: 4px;
+  	padding: 4px 36px 4px 15px;
+  	position: relative;
+  	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  	box-sizing: border-box;
+  	font-weight: 300;
+  	background: #73b4f2;
+  	color: #ffffff;
+  }
+  #comment-wrapper .edit-item-content {
+  	clear: both;
+  }
+    #comment-wrapper .primaryAction:after {
+    	content: "";
+    	font-family: WNI;
+    	font-size: 32px;
+    	position: absolute;
+    	right:5px;
+    	top: 4px;
+    }
+   #comment-wrapper .primaryAction:hover {
+    background: none repeat scroll 0 0 #52a3ef;
+    }
+    #comment-wrapper h4 {
+    	margin-bottom: 8px;
+    }
+    h2#commenter {
+      font-size: 1.4em;
+    }
+    #comment-wrapper, #judges, #apply, #professional, #who {
+  margin-top: 70px; 
+}
+</style>
+<!-- Pannel 6 END -->
+
+<!-- Pannel 7 -->
+<script>
+jQuery.sharedCount = function(url, fn) {
+ url = encodeURIComponent(url || location.href);
+ var domain = "//free.sharedcount.com/"; /* SET DOMAIN */
+ var apikey = "8e4b7187bcfca463ceeca1577105f710bf47edd1" /*API KEY HERE*/
+ var arg = {
+  data: {
+   url : url,
+   apikey : apikey
+  },
+  url: domain,
+  cache: true,
+  dataType: "json"
+ };
+ if ('withCredentials' in new XMLHttpRequest) {
+  arg.success = fn;
+ }
+ else {
+  var cb = "sc_" + url.replace(/\W/g, '');
+  window[cb] = fn;
+  arg.jsonpCallback = cb;
+  arg.dataType += "p";
+ }
+ return jQuery.ajax(arg);
+};
+
+jQuery(document).ready(function($){
+ var targetUrl = "http://" + location.host + location.pathname;
+
+ $.sharedCount(targetUrl, function(data){
+  var totalShares = data.Twitter + data.Facebook.like_count + data.GooglePlusOne + data.Facebook.share_count + data.Pinterest + data.LinkedIn + data.StumbleUpon;
+  if (totalShares <= 1) {
+   totalShares = 1;
+  }
+  $("#tweetscount").text(data.Twitter);    
+  $("#likescount").text(data.Facebook.like_count);
+  $("#facebooksharecount").text(data.Facebook.share_count);
+  $("#plusonescount").text(data.GooglePlusOne);
+  $("#stumbleuponcount").text(data.StumbleUpon);
+  $("#pintrestcount").text(data.Pinterest);
+  $("#linkedincount").text(data.LinkedIn);
+  $("#total").text(totalShares);
+  $("#sharedcount").fadeIn();
+
+ });
+});
+</script>
+<!-- Pannel 7 END -->
+
+<!-- Pannel 8 -->
+<script>
+
+  // Build the target srcs for the icons on click.
+  var socialMedialUrl          = window.location;
+  
+  var facebookParamU           = "http://bit.ly/1AWyF12";
+
+  var twitterParamText         = "Hungry travellers, @WorldNomads and @Intrepid_Travel want to send you on a food assignment to Sri Lanka. Apply: http://bit.ly/1Ck5zN3";
+
+  var pinParamDescription      = "Win a 7 day food adventure to Sri Lanka with World Nomads";
+  var pinParamMedia            = "http://www.worldnomads.com/Media/Default/LearnImages/food2015/WN-PP-2015-Pintrest.jpg";
+  
+  var linkedParamTitle         = "Are you an adventurous foodie?";
+  var linkedParamDescription   = "World Nomads wants to send three hungry travellers on food assignments to Sri Lanka.";
+
+  $(function() {
+    var $plus = $(".plus");
+    var $toggleableButtons = $(".pinterest, .gplus, .linkedin, .stumbleupon").hide();
+    $plus.on("click", function() {
+      var $this = $(this);
+      $toggleableButtons.toggle();
+      $plus.toggleClass("open");
+    });
+  });
+  
+  $(function() {
+    var $si = $(".socialicon");
+    var targetUrl = "";
+    $si.on("click", function() {
+      var $this = $(this);
+      if ($this.hasClass("facebook")) {
+        targetUrl = "http://www.facebook.com/share.php?u=" + facebookParamU;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("twitter")) {
+        targetUrl = "https://twitter.com/intent/tweet?text=" + twitterParamText;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("pinterest")) {
+        targetUrl = "http://pinterest.com/pin/create/button?description=" + pinParamDescription + "&media=" + pinParamMedia; + "&url=" + socialMedialUrl; 
+        window.open(targetUrl, 'name', 'width=755,height=400,scrollbars=no');
+      }
+      else if ($this.hasClass("gplus")) {
+        targetUrl = "https://plus.google.com/share?url=" + socialMedialUrl;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("linkedin")) {
+        targetUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + socialMedialUrl + "&title=" + linkedParamTitle + "&summary=" + linkedParamDescription;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+      else if ($this.hasClass("stumbleupon")) {
+        targetUrl = "http://www.stumbleupon.com/badge/?url=" + socialMedialUrl;
+        window.open(targetUrl, 'name', 'width=600,height=400');
+      }
+    });
+  });
+</script>
+<!-- Pannel 8 END  -->
+
+{% endblock content%}

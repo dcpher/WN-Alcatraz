@@ -11,7 +11,27 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/homepage-de.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/homepage-es.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/homepage-hk.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/homepage-it.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/homepage-master.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
