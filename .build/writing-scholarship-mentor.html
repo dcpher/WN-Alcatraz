@@ -1,0 +1,56 @@
+<script type="text/javascript">
+  var year = 2015; 
+  var month = 05; 
+  var day = 27;
+  var hour= 14; 
+  var min= 0; 
+  var sec= 0;
+</script>
+<script type="text/javascript" src="/Media/Default/scripts/js/counter-countdown.js"></script>
+
+<div class="row" id="article-content">
+  <div class="large-8 medium-8 small-12 columns">
+    <h3>title</h3>
+    <p class="highlight">intro</p>
+    <p>copy</p>
+    
+  </div>
+
+  <div class="large-4 medium-4 small-12 columns">
+    <div id="sidepannel">
+      <h4>Applications closes in...</h4>
+      <div id="countbox"></div>
+      <p class="small">Entries close May 27, 2015 at 2PM <a target="_blank" href="http://www.timeanddate.com/library/abbreviations/timezones/au/edt.html">(AEDT)</a></p>
+    </div>
+
+
+    <div id="sidepannel">
+        <h4>Not ready to apply yet?</h4>
+      <form class="scholarship-reminder"  action="http://worldnomadsgroup.createsend.com/t/y/s/fuinl/" method="post">
+        <p>Sign up below to receive a reminder 7 days before the scholarship closes.</p>
+        <input id="fieldEmail" name="cm-fuinl-fuinl" type="email" placeholder="Enter your email" required style="width: 100%;" />
+        <button class="base-button orange expand" style="margin-top:16px;">Subscribe</button>
+
+
+
+      </form>
+      <script>
+            $(function () {
+              $('.scholarship-reminder').submit(function (e) {
+                var form = $(this);
+                $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
+                  if (data.Status === 400) {
+                   form.find('.error').remove();
+                    form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
+                } else { // 200
+                          wng.googleAnalytics.trackEvent('Scholarship', 'Reminder');
+                          form.html("Thank you, we will email you 7 days before the scholarship closes.");
+                  }
+              });
+              e.preventDefault();
+            });
+          });
+      </script>
+    </div>
+  </div>
+</div>

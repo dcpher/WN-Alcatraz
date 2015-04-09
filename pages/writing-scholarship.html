@@ -14,14 +14,14 @@
         </ul>
       </div>
       <h1>Win a writing road trip across the U.S.! </h1>
-      <p class="intro">Plus be mentored by a Lonely Planet author in San Francisco</p>
+      <p class="highlight">Plus be mentored by a Lonely Planet author in San Francisco</p>
       <div class="loggedin">
         <form action="http://scholarships.worldnomads.com/application_form.aspx" method="get">
           <button class="base-button orange">Apply now</button>
         </form>
       </div>
       <div class="notloggedin" >
-        <form action="http://scholarships.worldnomads.com/application_form.aspx" method="get">
+        <form action="https://www.worldnomads.com/member/opensignin?ReturnUrl=http%3a%2f%2fadventures.worldnomads.com%2fmembers%2fcreateblog.aspx" method="get">
           <button class="base-button orange">Apply now</button>
         </form>
       </div>
@@ -38,9 +38,21 @@
 </div>
 
 <style>
+#scholarship h1, #scholarship p.small {
+  color: #ffffff;
+}
+#scholarship .row {
+  padding-top: 50px;
+}
+#scholarship .highlight {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
 #scholarship .sponsor {
   float:right;
-  margin-top: 200px;
+  margin-top: 265px;
 }
 #scholarship .sponsor p {
   text-align: center;
@@ -53,29 +65,29 @@
 #scholarship p.small { font-size: 12px;}
 @media all and (min-width: 860px) {
   #scholarship {
-    background-image: url('/Media/Default/LearnImages/hero_srilanka_full.jpg');
+    background-image: url('/Media/Default/LearnImages/writing2015/hero_roadtrip_full.jpg');
     background-position: top center;
     min-height: 550px;
   }
 }
 @media all and (max-width: 860px) {
   #scholarship {
-    background-image: url('/Media/Default/LearnImages/hero_srilanka_tablet.jpg');
+    background-image: url('/Media/Default/LearnImages/writing2015/hero_roadtrip_tablet.jpg');
     min-height: 440px;
   }
 }
 @media all and (max-width: 640px) {
-  .scholarship .sponsor {
+  #scholarship .sponsor {
     float: left;
     margin-top: 0;
   }
-  .scholarship .sponsor p {
+  #scholarship .sponsor p {
     text-align: left;
   }
 }
 @media all and (max-width: 500px) {
   #scholarship {
-    background-image: url('/Media/Default/LearnImages/hero_srilanka_mobile.jpg');
+    background-image: url('/Media/Default/LearnImages/writing2015/hero_roadtrip_mobile.jpg');
   }
 }
 </style>
@@ -91,6 +103,7 @@
     $(".notloggedin").hide();
   }
 </script>
+
 
 
 <!-- Header END -->
@@ -152,49 +165,77 @@
   </div>
 
   <div class="large-4 medium-4 small-12 columns">
-	  <div id="sidepannel">
-	    <h4>Applications closes in...</h4>
-	    <div id="countbox"></div>
-	    <p class="small">Entries close May 27, 2015 at 2PM <a target="_blank" href="http://www.timeanddate.com/library/abbreviations/timezones/au/edt.html">(AEDT)</a></p>
-	  </div>
+    <div id="sidepannel">
+      <h4>Applications closes in...</h4>
+      <div id="countbox"></div>
+      <p class="small">Entries close May 27, 2015 at 2PM <a target="_blank" href="http://www.timeanddate.com/library/abbreviations/timezones/au/edt.html">(AEDT)</a></p>
+    </div>
 
-	  <div id="sidepannel">
+    <div id="sidepannel">
         <h4>Not ready to apply yet?</h4>
-	    <form class="scholarship-reminder"  action="http://worldnomadsgroup.createsend.com/t/y/s/fuinl/" method="post">
-	      <p>Sign up below to receive a reminder 7 days before the scholarship closes.</p>
-	      <input id="fieldEmail" name="cm-fuinl-fuinl" type="email" placeholder="Enter your email" required style="width: 100%;" />
-	      <button class="base-button orange expand" style="margin-top:16px;">Subscribe</button>
+      <form class="scholarship-reminder"  action="http://worldnomadsgroup.createsend.com/t/y/s/fuinl/" method="post">
+        <p>Sign up below to receive a reminder 7 days before the scholarship closes.</p>
+        <input id="fieldEmail" name="cm-fuinl-fuinl" type="email" placeholder="Enter your email" required style="width: 100%;" />
+        <button class="base-button orange expand" style="margin-top:16px;">Subscribe</button>
 
 
 
-	    </form>
-	    <script>
-	          $(function () {
-	            $('.scholarship-reminder').submit(function (e) {
-	              var form = $(this);
-	              $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
-	                if (data.Status === 400) {
-	                 form.find('.error').remove();
-	                  form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
-	              } else { // 200
-	                        wng.googleAnalytics.trackEvent('Scholarship', 'Reminder');
-	                        form.html("Thank you, we will email you 7 days before the scholarship closes.");
-	                }
-	            });
-	            e.preventDefault();
-	          });
-	        });
-	    </script>
-	  </div>
+      </form>
+      <script>
+            $(function () {
+              $('.scholarship-reminder').submit(function (e) {
+                var form = $(this);
+                $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
+                  if (data.Status === 400) {
+                   form.find('.error').remove();
+                    form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
+                } else { // 200
+                          wng.googleAnalytics.trackEvent('Scholarship', 'Reminder');
+                          form.html("Thank you, we will email you 7 days before the scholarship closes.");
+                  }
+              });
+              e.preventDefault();
+            });
+          });
+      </script>
+    </div>
   </div>
 </div>
 <!-- Pannel 2 END -->
 
 
 <!-- Pannel 3 -->
+<style>
+.feature-box.how {
+  background-image: url('/Media/Default/LearnImages/writing2015/HowtoApply_feature.jpg');
+}
+.feature-box.mentor {
+  background-image: url('/Media/Default/LearnImages/writing2015/MeetyourMentor_Feature.jpg');
+}
+.feature-box.pro {
+  background-image: url('/Media/Default/LearnImages/writing2015/AmIProfessional.jpg');
+}
+.feature-box.questions {
+  background-image: url('/Media/Default/LearnImages/writing2015/AnyQuestions.jpg');
+}
+@media all and (max-width: 500px) {
+  .feature-box.how {
+      background-image: url('/Media/Default/LearnImages/writing2015/HowtoApply_feature_tablet.jpg');
+  }
+  .feature-box.mentor {
+      background-image: url('/Media/Default/LearnImages/writing2015/MeetyourMentor_Feature_tablet.jpg');
+  }
+  .feature-box.pro {
+      background-image: url('/Media/Default/LearnImages/writing2015/AmIProfessional_tablet.jpg');
+  }
+  .feature-box.questions {
+      background-image: url('/Media/Default/LearnImages/writing2015/AnyQuestions_tablet.jpg');
+  }
+}
+</style>
 <div class="row">
   <div class="large-3 medium-6 small-12 columns">
-    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+    <div class="feature-box how">
       <ul class="breadcrumb">
         <li>
           <a href="/learn/travel-writing">Travel Writing</a>
@@ -203,7 +244,7 @@
           <a href="#apply">How</a>
         </li>
       </ul>
-      <a href="#apply"><h4>How</h4></a>
+      <a href="#apply"><h4>How to apply</h4></a>
       <div class="bottom teal">
         <span class="feature-link-title">How to apply</span>
         <p>1. Submit your recipe.</p>
@@ -214,7 +255,7 @@
   </div> 
 
   <div class="large-3 medium-6 small-12 columns">
-    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+    <div class="feature-box mentor">
       <ul class="breadcrumb">
         <li>
           <a href="/learn/travel-writing">Travel Writing</a>
@@ -234,7 +275,7 @@
   </div> 
 
   <div class="large-3 medium-6 small-12 columns">
-    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+    <div class="feature-box pro">
       <ul class="breadcrumb">
         <li>
           <a href="/learn/travel-writing">Travel Writing</a>
@@ -254,7 +295,7 @@
   </div> 
 
   <div class="large-3 medium-6 small-12 columns">
-    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+    <div class="feature-box questions">
       <ul class="breadcrumb">
         <li>
           <a href="/learn/travel-writing">Travel Writing</a>
@@ -448,12 +489,40 @@
 
 
 <!-- Pannel 5 -->
+<style>
+.feature-box.rmckinley {
+  background-image: url('/Media/Default/LearnImages/writing2015/BelugaSmile.jpg');
+}
+.feature-box.aeileenr {
+  background-image: url('/Media/Default/LearnImages/writing2015/WrongSideofWall.jpg');
+}
+.feature-box.jazzanomadica {
+  background-image: url('/Media/Default/LearnImages/writing2015/NeverEndingHorizon.jpg');
+}
+.feature-box.roadtrip {
+  background-image: url('/Media/Default/LearnImages/writing2015/EuroRoadTrip.jpg');
+}
+@media all and (max-width: 500px) {
+  .feature-box.rmckinley {
+    background-image: url('/Media/Default/LearnImages/writing2015/BelugaSmile_tablet.jpg');
+  }
+  .feature-box.aeileenr {
+    background-image: url('/Media/Default/LearnImages/writing2015/WrongSideofWall_tablet.jpg');
+  }
+  .feature-box.jazzanomadica {
+    background-image: url('/Media/Default/LearnImages/writing2015/NeverEndingHorizon_tablet.jpg');
+  }
+  .feature-box.roadtrip {
+    background-image: url('/Media/Default/LearnImages/writing2015/EuroRoadTrip_tablet.jpg');
+  }
+}
+</style>
 <div class="row">
   <div class="large-12 medium-12 small-12 columns">
     <h3>Read the winning and best entries from our 2013 Travel Writing Scholarship</h3>
   </div>
   <div class="large-3 medium-6 small-12 columns">
-    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+    <div class="feature-box rmckinley">
       <ul class="breadcrumb">
         <li>
           <a href="/learn/travel-writing">Travel Writing</a>
@@ -468,7 +537,7 @@
   </div> 
 
   <div class="large-3 medium-6 small-12 columns">
-    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+    <div class="feature-box aeileenr">
       <ul class="breadcrumb">
         <li>
           <a href="/learn/travel-writing">Travel Writing</a>
@@ -483,7 +552,7 @@
   </div> 
 
   <div class="large-3 medium-6 small-12 columns">
-    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+    <div class="feature-box jazzanomadica">
       <ul class="breadcrumb">
         <li>
           <a href="/learn/travel-writing">Travel Writing</a>
@@ -498,7 +567,7 @@
   </div> 
 
   <div class="large-3 medium-6 small-12 columns">
-    <div class="feature-box" style="background-image: url('/Media/Default/LearnImages/food2015/apply-450x440.jpg');">
+    <div class="feature-box roadtrip">
       <ul class="breadcrumb">
         <li>
           <a href="/learn/travel-writing">Travel Writing</a>
@@ -611,6 +680,83 @@ padding-top:8px;
 <!-- Pannel 6 END -->
 
 <!-- Pannel 7 -->
+
+<!-- Mobile Bit -->
+
+<div class="mobilesignup">
+  <div class="row">
+    <a class="mobileclose" href="#">&#xe641;</a>
+    <h3>We know this is going to be hard to complete on a mobile device, why not enter your email and we will send you a link so you don't forget to enter this great oppourtunity.</h3>
+    <form class="scholarship-mobile"  action="http://worldnomadsgroup.createsend.com/t/y/s/fuhdlk/" method="post">
+          <input id="fieldEmail" name="cm-fuhdlk-fuhdlk" type="email" placeholder="Enter your email" required style="width: 60%;" />
+          <button class="base-button orange" style="width: 38%; margin-left: 2%;">Apply</button>
+        </form>
+
+        <script>
+              $(function () {
+                $('.scholarship-mobile').submit(function (e) {
+                  var form = $(this);
+                  $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
+                    if (data.Status === 400) {
+                     form.find('.error').remove();
+                      form.append("&amp;lt;p class='error'&amp;gt;" + data.Message + "&amp;lt;/p&amp;gt;");
+                  } else { // 200
+                            wng.googleAnalytics.trackEvent('Scholarship', 'Mobile Reminder');
+                            form.html("Thank you, we will email so you dont forget to enter.");
+                    }
+                });
+                e.preventDefault();
+              });
+            });
+        </script>
+  </div>
+<script>
+$( ".mobilesignup" ).show();
+$( "a.mobileclose" ).click(function( event ) {
+  event.preventDefault();
+  $( ".mobilesignup" ).hide();
+});
+</script>
+</div>
+<style>
+.mobilesignup {
+  display: none;
+}
+@media all and (max-width: 500px) {
+  .mobilesignup {
+  display: block;
+  width: 100%;
+  clear: both;
+  background: url('http://cdn.worldnomads.net/Content/styles/i/wn/backgrounds/hero_bg_color_blue.jpg');
+  position: fixed;
+  padding-bottom: 20px;
+  bottom: 0;
+  margin-bottom: 0;
+  z-index: 5000
+}
+.mobilesignup h3 {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 20px;
+  padding-bottom: 8px;
+}
+.mobilesignup a.mobileclose {
+  color: #ffffff;
+  float: right;
+}
+.mobileclose {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "WNI";
+  line-height: 24px;
+  margin-bottom: 10px;
+  padding: 12px 0;
+}
+}
+</style>
+
+<!-- Mobile Bit END -->
 <script>
 jQuery.sharedCount = function(url, fn) {
  url = encodeURIComponent(url || location.href);
